@@ -1,0 +1,159 @@
+@charset "UTF-8";
+
+html,body {
+  font-family: "noto-sans", "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", MS PGothic, sans-serif;
+  font-size: 13px;
+  color:  #000;
+  font-weight: normal;
+  line-break: strict;
+  word-break: break-strict;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  color: #666;
+  -webkit-transition: all  0.2s ease;
+  transition: all  0.2s ease;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.variable {
+  width: 100%;
+}
+
+/* contents */
+#contents {
+  margin-bottom: 30px;
+}
+#contents .wrap {
+  width: 100%;
+  max-width: 900px;
+  margin: 30px auto 0;
+}
+
+.inner {
+  padding: 0 5%;
+}
+
+/* section */
+.section {
+  margin-bottom: 30px;
+}
+.section:last-child {
+  margin-bottom: 0;
+}
+
+h2 {
+  font-family: viato, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+h2::after {
+  display: block;
+  position: absolute;
+  left: 50%;
+  width: 50px;
+  margin: 10px 0 0 -25px;
+  border-bottom: 2px solid #000;
+  content: "";
+}
+
+/* js-fade */
+.js-fade {
+  opacity: 0;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+.js-fade.show {
+  opacity: 1;
+}
+
+/*----------------------------
+  main-visual
+-----------------------------*/
+#main-visual {
+  position: relative;
+}
+#main-visual .fade-text {
+  font-size: 20px;
+  color: #fff;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+/*----------------------------
+  works
+-----------------------------*/
+#works .work-lists ul {
+  overflow: hidden;
+}
+
+#works .work-lists ul li {
+  width: 32%;
+  float: left;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  position: relative;
+}
+#works .work-lists ul li:nth-child(3n) {
+  margin-right: 0;
+}
+#works .work-lists ul li a {
+  display: block;
+}
+
+/*----------------------------
+  about
+-----------------------------*/
+#about .profile ul {
+  
+}
+
+#about .profile ul li {
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+#about .profile ul li:last-child {
+  margin-bottom: 0;
+}
+
+#about .profile ul li .title {
+  width: 40%;
+  float: left;
+}
+#about .profile ul li .title .name {
+  display: inline-block;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#about .profile ul li .detail {
+  width: 60%;
+  float: left;
+}
+
+/*----------------------------
+  contact
+-----------------------------*/
+#contact .mail {
+  
+}
+#contact .mail a {
+  width: 280px;
+  display: block;
+  margin:  0 auto;
+  text-align: center;
+  padding: 20px;
+  border: 3px solid #000;
+  font-size: 20px;
+}
+
+#contact .mail a:hover {
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);
+}
