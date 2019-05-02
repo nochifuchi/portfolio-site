@@ -2,14 +2,15 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<meta name="description" content="WEBクリエイターを目指すノザワフミタカのポートフォリオサイト">
+<meta name="description" content="WEBエンジニアを目指すノザワフミタカのポートフォリオサイト">
+<meta name="Keywords" content="ポートフォリオサイト,ノザワフミタカ" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>FUMITAKA NOZAWA portfolio | WEBクリエイターを目指すノザワフミタカのポートフォリオサイト</title>
+<title>FUMITAKA NOZAWA portfolio | WEBエンジニアを目指すノザワフミタカのポートフォリオサイト</title>
 <link rel="stylesheet" type="text/css" href="common/css/reset.css">
 <link rel="stylesheet" href="https://use.typekit.net/ghl5nid.css">
 <link rel="stylesheet" href="https://use.typekit.net/ghl5nid.css">
 <link rel="stylesheet" type="text/css" href="common/css/index.css">
-<link rel="icon" type="image/vnd.microsoft.icon" href="/im/favicon.ico">
+<link rel="icon" type="image/vnd.microsoft.icon" href="common/img/favicon.ico">
 <script src="common/js/jquery-3.4.0.js"></script>
 <script src="common/js/index.js"></script>
 </head>
@@ -18,8 +19,11 @@
 
     <!-- main-visual -->
     <div id="main-visual">
-      <h1><img src="common/img/main_visual.jpg" class="variable js-fade" alt="FUMITAKA NOZAWA"></h1>
-      <div class="fade-text">Portfolio Site</div>
+      <h1>
+        <img src="common/img/main_visual.jpg" class="variable js-fade pc" alt="FUMITAKA NOZAWA">
+        <img src="common/img/main_visual_sp.jpg" class="variable js-fade sp" alt="F">
+      </h1>
+      <!-- <div class="fade-text">Portfolio Site</div> -->
     </div>
     <!-- /main-visual -->
 
@@ -33,20 +37,78 @@
           <div class="work-lists">
             <ul>
               <li>
-                <a href="">
+                <a href="https://www.aiki-natulabo.com/" target="_blank">
                   <img src="common/img/work_1.jpg" alt="" class="variable">
                 </a>
+                <div class="info">
+                  <div class="tool">
+                    <div class="title"><span>使用ツール</span></div>
+                    Wix / Sublime Text 2 / HTML / CSS
+                  </div>
+                  <div class="detail">
+                    <div class="title"><span>担当業務</span></div>
+                    導入されていたWixを使用したサイトリニューアル
+                  </div>
+                  <div class="point">
+                    <div class="title"><span>ポイント</span></div>
+                    土地の良さ、新鮮な野菜が伝わるような写真を撮影し、トップイメージにしてみました。また、サイトカラーや文字色を会社のロゴの色に合わせてデザインしました。
+                  </div>
+                </div>
               </li>
               <li>
-                <a href="">
+                <a href="https://crosset.onward.co.jp/" target="_blank">
                   <img src="common/img/work_2.jpg" alt="" class="variable">
                 </a>
+                <div class="info">
+                  <div class="tool">
+                    <div class="title"><span>使用ツール</span></div>
+                    Sublime Text 2 / Photoshop / HTML / Sass / Gulp / jQuery / PHP
+                  </div>
+                  <div class="detail">
+                    <div class="title"><span>担当業務</span></div>
+                    全面リニューアルに伴うPC、スマホ、モバイルのコーディング(HTML、CSS、jQuery、PHP) <br>
+                    リニューアル後の更新作業・管理
+                  </div>
+                  <div class="point">
+                    <div class="title"><span>ポイント</span></div>
+                    コーディングの際に共通部分を別ファイル化したり、パーツ毎にファイルを分けて管理しやすいような構造にしました。また、SassやGulpを使用し、コーディングの効率化を図りました。
+                  </div>
+                </div>
               </li>
               <li>
-                <a href="">
+                <a href="http://www.natusavon.com/" target="_blank">
                   <img src="common/img/work_3.jpg" alt="" class="variable">
                 </a>
+                <div class="info">
+                  <div class="tool">
+                    <div class="title"><span>使用ツール</span></div>
+                    Sublime Text 2 / Photoshop / HTML / jQuery
+                  </div>
+                  <div class="detail">
+                    <div class="title"><span>担当業務</span></div>
+                    レスポンシブサイトのコーディングを担当。
+                  </div>
+                  <div class="point">
+                    <div class="title"><span>ポイント</span></div>
+                    PC、スマホで共通化できる部分を多くし、なるべくHTMLをシンプルで少ない構造にするようにしました。また、CSSアニメーションやjQueryの簡単な演出を加え、動きのあるサイトになるようにしました。
+                  </div>
+                </div>
               </li>
+              <!-- <li>
+                <a href="">
+                  <img src="common/img/work_4.jpg" alt="" class="variable">
+                </a>
+                <div class="info">
+                  <div class="tool">
+                    <div class="title"><span>使用ツール</span></div>
+                    Sublime Text 2 / Photoshop / HTML / Saas / Gulp / jQuery / PHP
+                  </div>
+                  <div class="detail">
+                    <div class="title"><span>担当業務</span></div>
+                    全面リニューアルに伴うデザイン変更のモックアップ(PC、スマホ、フィーチャーフォン)のコーディング(HTML、CSS、jQuery)、PHPによるサイト構築 
+                  </div>
+                </div>
+              </li> -->
             </ul>
           </div>
         </div>
@@ -63,7 +125,11 @@
                   <div class="en">NOZAWA FUMITAKA</div>
                 </div>
                 <div class="detail">
-                  現在までに培ったWEB制作やECに関する知識・スキルを活かして、魅力的な貴社の商品を多くの人に届けることに貢献したいと思い志望いたしました。また、ECサイト運営やサイト制作だけでなく、WEBマーケティングや企画など業務が多岐にわたり、コーディングだけでなく様々な知識やスキルを身につけられることに魅力を感じました。
+                  <p>埼玉県出身で札幌在住、WEBエンジニアを目指しています。<br>
+                  大学では農学を学んでいましたが、ものづくりが好きでWEBにも興味があったので、独学で勉強しWEB業界に入りました。<br>
+                  WEB制作では管理しやすく、ユーザー目線で使いやすいサイト作りを心がけています。<br>
+                  また、ブログなども今後書いていこうと思っております。<br>
+                  好きなことは温泉やサウナでスーパー銭湯によく行っています。最近はサウナスパ検定という資格も取ろうかと考え中です。</p>
                 </div>
               </li>
               <li class="profile">
@@ -72,7 +138,12 @@
                   <div class="en">SKILL</div>
                 </div>
                 <div class="detail">
-                  現在までに培ったWEB制作やECに関する知識・スキルを活かして、魅力的な貴社の商品を多くの人に届けることに貢献したいと思い志望いたしました。また、ECサイト運営やサイト制作だけでなく、WEBマーケティングや企画など業務が多岐にわたり、コーディングだけでなく様々な知識やスキルを身につけられることに魅力を感じました。
+                  <p>HTML(5) / CSS(3) / Photoshop / jQuery / JavaScript / PHP<br>
+                    HTMLはセマンティックにマークアップし、誰もが見やすい構造になるようにに心がけています。<br>
+                    CSSは無駄な記述を無くすことと、自分でも見やすく、誰かが編集するときもわかりやすいような記述を心がけています。またSassの使用経験もあります。<br>
+                    Photoshopは基本的な操作は出来ますが、使いこなせてデザインできるようになるために現在勉強しております。<br>
+                    Illustratorに関しても勉強していきたいと考えております。<br>
+                    jQueryやJavaScript、PHPは基礎的な知識しかないので、スキルアップしていきたいと考えております。</p>
                 </div>
               </li>
             </ul>
@@ -83,7 +154,7 @@
         <!-- contact -->
         <div id="contact" class="section js-fade">
           <h2>contact</h2>
-          <div class="mail"><a href="fumitaka05@gmail.com">fumitaka05@gmail.com</a></div>
+          <div class="mail"><a href="mailto:fumitaka05@gmail.com">fumitaka05@gmail.com</a></div>
         </div>
         <!-- /contact -->
 

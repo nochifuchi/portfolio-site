@@ -72,6 +72,10 @@ h2::after {
   opacity: 1;
 }
 
+img.sp {
+  display: none;
+}
+
 /*----------------------------
   main-visual
 -----------------------------*/
@@ -92,7 +96,6 @@ h2::after {
 #works .work-lists ul {
   overflow: hidden;
 }
-
 #works .work-lists ul li {
   width: 32%;
   float: left;
@@ -107,24 +110,34 @@ h2::after {
   display: block;
 }
 
+#works .info {
+  margin-top: 15px;
+}
+#works .info .title {
+  margin-bottom: 5px;
+}
+#works .info .title span {
+  border-bottom: 2px solid #666;
+}
+#works .info > div {
+  margin-bottom: 8px;
+}
+#works .info > div:last-child {
+  margin-bottom: 0;
+}
+
 /*----------------------------
   about
 -----------------------------*/
-#about .profile ul {
-  
-}
-
 #about .profile ul li {
   overflow: hidden;
   margin-bottom: 25px;
 }
-
 #about .profile ul li:last-child {
   margin-bottom: 0;
 }
-
 #about .profile ul li .title {
-  width: 40%;
+  width: 35%;
   float: left;
 }
 #about .profile ul li .title .name {
@@ -132,9 +145,8 @@ h2::after {
   font-size: 25px;
   font-weight: bold;
 }
-
 #about .profile ul li .detail {
-  width: 60%;
+  width: 65%;
   float: left;
 }
 
@@ -153,7 +165,66 @@ h2::after {
   border: 3px solid #000;
   font-size: 20px;
 }
-
 #contact .mail a:hover {
   box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);
+}
+
+
+/*----------------------------
+
+  sp
+
+-----------------------------*/
+@media screen and (max-width: 680px) {
+
+  #contents > .wrap {
+    padding: 0 2%;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  img.pc {
+    display: none;
+  }
+  img.sp {
+    display: block;
+  }
+
+  /* works */
+  #works .work-lists ul li {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+    margin-bottom: 5%;
+    position: relative;
+  }
+  #works .info {
+    margin-top: 5px;
+  }
+  #works .info .title {
+    margin-bottom: 5px;
+  }
+  #works .info > div {
+    margin-bottom: 5px;
+  }
+  
+  /* about */
+  #about .profile ul li .title {
+    margin-bottom: 2%;
+    border-bottom: 2px solid #666;
+  }
+  #about .profile ul li .title,
+  #about .profile ul li .detail {
+    width: 100%;
+    float: none;
+  }
+  #about .profile ul li .title .name {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
 }
