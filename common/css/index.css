@@ -12,10 +12,21 @@ html,body {
 
 a {
   color: #666;
-  -webkit-transition: all  0.2s ease;
-  transition: all  0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
+}
+
+.toGray{
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.toGray:hover{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .variable {
@@ -110,8 +121,18 @@ img.sp {
   display: block;
 }
 
+#works .site {
+  font-weight: bold;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #666;
+}
+
 #works .info {
-  margin-top: 15px;
+  margin-top: 5px;
+}
+#works .info .site .url {
+  display: block;
 }
 #works .info .title {
   margin-bottom: 5px;
@@ -153,11 +174,11 @@ img.sp {
 /*----------------------------
   contact
 -----------------------------*/
-#contact .mail {
-  
+#contact .mail img {
+  padding-right: 5px;
 }
 #contact .mail a {
-  width: 280px;
+  width: 300px;
   display: block;
   margin:  0 auto;
   text-align: center;
@@ -194,6 +215,13 @@ img.sp {
   }
 
   /* works */
+  #works .site {
+    font-size: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #666;
+  }
+
   #works .work-lists ul li {
     width: 100%;
     float: none;
