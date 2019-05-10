@@ -150,7 +150,7 @@ img.sp {
   right: -300px;
   background: rgba(0,0,0,0.7);
   z-index: 5;
-  transition: all 0.4s;
+  transition: all 0.3s ease-out;
 }
 .global-nav.active {
   right: 0;
@@ -278,7 +278,6 @@ img.sp {
   box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);
 }
 
-
 /*----------------------------
 
   sp
@@ -300,6 +299,23 @@ img.sp {
   }
   img.sp {
     display: block;
+  }
+  
+  /* nav-trigger */
+  .nav-trigger {
+    width: 40px;
+    height: 34px;
+  }
+  .nav-trigger span:nth-of-type(2) {
+    top: 15px;
+  }
+  .nav-trigger.active span:nth-of-type(1) {
+    -webkit-transform: translateY(15px) rotate(-45deg);
+    transform: translateY(15px) rotate(-45deg);
+  }
+  .nav-trigger.active span:nth-of-type(3) {
+    -webkit-transform: translateY(-15px) rotate(45deg);
+    transform: translateY(-15px) rotate(45deg);
   }
 
   /* global-nav */
