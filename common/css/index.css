@@ -150,7 +150,7 @@ img.sp {
   right: -300px;
   background: rgba(0,0,0,0.7);
   z-index: 5;
-  transition: all 0.3s ease-out;
+  transition: all 0.2s ease-out;
 }
 .global-nav.active {
   right: 0;
