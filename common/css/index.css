@@ -76,11 +76,24 @@ h2::after {
 /* js-fade */
 .js-fade {
   opacity: 0;
-  -webkit-transition: all 2s ease;
-  transition: all 2s ease;
+  transform: translate(0,70px); 
+  -webkit-transform: translate(0,70px);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .js-fade.show {
-  opacity: 1;
+  opacity: 1.0;
+  transform: translate(0,0); 
+  -webkit-transform: translate(0,0);
+}
+/* 要素表示をずらす */
+.js-fade:nth-of-type(2) {
+  -webkit-transition-delay:150ms;
+  transition-delay:150ms;
+}
+.js-fade:nth-of-type(3) {
+  -webkit-transition-delay:300ms;
+  transition-delay:300ms;
 }
 
 img.sp {

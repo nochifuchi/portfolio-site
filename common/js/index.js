@@ -1,6 +1,20 @@
 //loading
-$(function(){
-  $('.js-fade').addClass('show');
+// $(function(){
+//   $('.js-fade').addClass('show');
+// });
+
+//fade contents
+$(function() {
+  $(window).scroll(function() {
+    $('.js-fade').each(function() {
+      var conPos = $(this).offset().top;
+      var scroll = $(window).scrollTop();
+      var windowH = $(window).height();
+      if ( scroll > conPos - windowH + 200 ) {
+        $(this).addClass('show');
+      }
+    });
+  });
 });
 
 //Global Nav
