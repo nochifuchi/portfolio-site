@@ -65,10 +65,8 @@ h2 {
 }
 h2::after {
   display: block;
-  position: absolute;
-  left: 50%;
   width: 50px;
-  margin: 10px 0 0 -25px;
+  margin: 10px auto 0;
   border-bottom: 2px solid #000;
   content: "";
 }
@@ -193,13 +191,12 @@ img.sp {
 -----------------------------*/
 #main-visual {
   position: relative;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
 }
-#main-visual .fade-text {
-  font-size: 20px;
-  color: #fff;
-  position: fixed;
-  top: 10px;
-  left: 10px;
+#main-visual.show {
+  opacity: 1;
 }
 
 /*----------------------------

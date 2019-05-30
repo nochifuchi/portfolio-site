@@ -2,6 +2,9 @@
 // $(function(){
 //   $('.js-fade').addClass('show');
 // });
+$(function() {
+  $('#main-visual').addClass('show');
+});
 
 //fade contents
 $(function() {
