@@ -74,14 +74,14 @@ h2::after {
 /* js-fade */
 .js-fade {
   opacity: 0;
-  transform: translate(0,70px); 
+  transform: translate(0,70px);
   -webkit-transform: translate(0,70px);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 .js-fade.show {
   opacity: 1.0;
-  transform: translate(0,0); 
+  transform: translate(0,0);
   -webkit-transform: translate(0,0);
 }
 /* 要素表示をずらす */
@@ -92,6 +92,10 @@ h2::after {
 .js-fade:nth-of-type(3) {
   -webkit-transition-delay:300ms;
   transition-delay:300ms;
+}
+.js-fade:nth-of-type(5) {
+  -webkit-transition-delay:150ms;
+  transition-delay:150ms;
 }
 
 img.sp {
@@ -310,7 +314,7 @@ img.sp {
   img.sp {
     display: block;
   }
-  
+
   /* nav-trigger */
   .nav-trigger {
     width: 40px;
@@ -358,7 +362,7 @@ img.sp {
   #works .info > div {
     margin-bottom: 5px;
   }
-  
+
   /* about */
   #about .profile ul li .title {
     margin-bottom: 2%;
