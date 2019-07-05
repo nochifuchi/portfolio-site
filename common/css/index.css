@@ -85,7 +85,7 @@ h2::after {
   -webkit-transform: translate(0,0);
 }
 /* 要素表示をずらす */
-.js-fade:nth-of-type(2) {
+/* .js-fade:nth-of-type(2) {
   -webkit-transition-delay:150ms;
   transition-delay:150ms;
 }
@@ -96,7 +96,7 @@ h2::after {
 .js-fade:nth-of-type(5) {
   -webkit-transition-delay:150ms;
   transition-delay:150ms;
-}
+} */
 
 img.sp {
   display: none;
