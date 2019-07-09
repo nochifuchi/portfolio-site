@@ -17,6 +17,9 @@ a {
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
 }
+a:hover {
+  opacity: 0.7;
+}
 
 .toGray{
   -webkit-filter: grayscale(0%);
@@ -233,8 +236,8 @@ img.sp {
 #works .info {
   margin-top: 5px;
 }
-#works .info .site .url {
-  display: block;
+#works .info .url {
+  word-break: break-all;
 }
 #works .info .title {
   margin-bottom: 5px;
