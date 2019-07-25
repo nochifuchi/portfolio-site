@@ -18,44 +18,60 @@
 
   <div id="app">
 
-    <!-- nav-bar -->
-    <div class="nav-bar">
-      <a class="nav-trigger" href="">
-        <span></span>
-        <span></span>
-        <span></span>
-      </a>
-    </div>
-    <!-- /nav-bar -->
-
-    <!-- global-nav -->
-    <nav class="global-nav">
-      <ul>
-        <li><a href="index.html">home</a></li>
-        <li><a href="#works">works</a></li>
-        <li><a href="#about">about</a></li>
-        <li><a href="#contact">contact</a></li>
-      </ul>
-    </nav>
-    <!-- /global-nav -->
+    <!-- g-header -->
+    <header id="g-header">
+      <!-- sp-g-nav -->
+      <div class="sp-g-nav">
+        <div class="nav-menu">
+          <a class="nav-trigger" href="">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#main-visual">home</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- navbar -->
+      <div class="navbar fixed-top">
+        <div class="container">
+          <h1>Fumitaka's Portfolio</h1>
+          <nav class="g-nav">
+            <ul>
+              <li><a href="#main-visual">Home</a></li>
+              <li><a href="#works">Works</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- /g-header -->
 
     <!-- main-visual -->
     <div id="main-visual">
-      <h1>
+      <h2>
         <img src="common/img/main_visual.jpg" class="variable pc" alt="FUMITAKA NOZAWA">
         <img src="common/img/main_visual_sp.jpg" class="variable sp" alt="F">
-      </h1>
+      </h2>
       <!-- <div class="fade-text">Portfolio Site</div> -->
     </div>
     <!-- /main-visual -->
 
     <!-- contents -->
     <div id="contents">
-      <div class="wrap">
+      <div class="wrap container">
 
         <!-- works -->
         <div id="works" class="section">
-          <h2>works</h2>
+          <h3>works</h3>
           <div class="work-lists">
             <ul>
               <li class="js-fade">
@@ -239,7 +255,7 @@
 
         <!-- about -->
         <div id="about" class="section">
-          <h2>about</h2>
+          <h3>about</h3>
           <div class="profile js-fade">
             <ul>
               <li class="profile">
@@ -286,7 +302,7 @@
 
         <!-- contact -->
         <div id="contact" class="section">
-          <h2>contact</h2>
+          <h3>contact</h3>
           <div class="mail"><a href="mailto:fumitaka05@gmail.com"><img src="common/img/icon_mail.png" alt="" width="23">fumitaka05@gmail.com</a></div>
         </div>
         <!-- /contact -->
