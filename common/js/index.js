@@ -1,7 +1,4 @@
 //loading
-// $(function(){
-//   $('.js-fade').addClass('show');
-// });
 $(function() {
   $('#main-visual').addClass('show');
 });
@@ -20,10 +17,23 @@ $(function() {
   });
 });
 
-//Global Nav
+//navbar
+$(function() {
+  let navbar = $('.navbar');
+  $(window).scroll(function() {
+    let scroll = $(window).scrollTop();
+    if (scroll > 0) {
+      navbar.addClass('show');
+    } else {
+      navbar.removeClass('show');
+    }
+  });
+});
+
+//sp-g-nav
 $(function() {
   var navTrg = $('.nav-trigger');
-  var nav = $('.global-nav');
+  var nav = $('.sp-g-nav nav');
   var app = $('#app');
 
   var closeNav = function() {
