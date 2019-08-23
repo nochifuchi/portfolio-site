@@ -1,0 +1,7 @@
+portfolio.code-workspace
+.history
+
+# Gulp
+node_modules
+package-lock.json
+package.json

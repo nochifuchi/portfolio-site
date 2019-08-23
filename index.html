@@ -13,6 +13,16 @@
 <link rel="icon" type="image/vnd.microsoft.icon" href="common/img/favicon.ico">
 <script src="common/js/jquery-3.4.0.js"></script>
 <script src="common/js/index.js"></script>
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'dje8mib',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
 </head>
 <body>
 
@@ -57,10 +67,12 @@
 
     <!-- main-visual -->
     <div id="main-visual">
+      <!--
       <h2>
         <img src="common/img/main_visual.jpg" class="variable pc" alt="FUMITAKA NOZAWA">
         <img src="common/img/main_visual_sp.jpg" class="variable sp" alt="F">
       </h2>
+      -->
       <!-- <div class="fade-text">Portfolio Site</div> -->
     </div>
     <!-- /main-visual -->
@@ -197,7 +209,7 @@
                 </div>
               </li>
               <li class="js-fade">
-                <div class="site">natu savon</div>
+                <div class="site">Natu Savon</div>
                 <div class="visual">
                   <a href="http://www.natusavon.com" target="_blank" media="" class="toGray">
                     <img src="common/img/work_2.jpg" alt="natu savon" class="variable">
