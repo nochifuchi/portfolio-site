@@ -9,6 +9,8 @@
 <link rel="stylesheet" type="text/css" href="common/css/reset.css">
 <link rel="stylesheet" href="https://use.typekit.net/ghl5nid.css">
 <link rel="stylesheet" href="https://use.typekit.net/ghl5nid.css">
+<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="common/css/app.css">
 <link rel="stylesheet" type="text/css" href="common/css/index.css">
 <link rel="icon" type="image/vnd.microsoft.icon" href="common/img/favicon.ico">
 <script src="common/js/jquery-3.4.0.js"></script>
@@ -51,7 +53,7 @@
       <!-- navbar -->
       <div class="navbar fixed-top">
         <div class="container">
-          <h1>Fumitaka's Portfolio</h1>
+          <h1>Portfolio</h1>
           <nav class="g-nav">
             <ul>
               <li><a href="#main-visual">Home</a></li>
@@ -67,13 +69,7 @@
 
     <!-- main-visual -->
     <div id="main-visual">
-      <!--
-      <h2>
-        <img src="common/img/main_visual.jpg" class="variable pc" alt="FUMITAKA NOZAWA">
-        <img src="common/img/main_visual_sp.jpg" class="variable sp" alt="F">
-      </h2>
-      -->
-      <!-- <div class="fade-text">Portfolio Site</div> -->
+      <h2>Fumitaka's Portofolio</h2>
     </div>
     <!-- /main-visual -->
 
@@ -82,191 +78,212 @@
       <div class="wrap container">
 
         <!-- works -->
-        <div id="works" class="section">
+        <section id="works" class="section">
           <h3>works</h3>
-          <div class="work-lists">
-            <ul>
-              <li class="js-fade">
-                <div class="site">Spotify APIを使った音楽分析</div>
-                <div class="visual">
-                  <a href="https://qiita.com/nochifuchi/items/505bdd7c9d2eee4c1997" target="_blank" class="toGray">
-                    <img src="common/img/work_7.jpg" alt="LINE お天気お知らせBOT" class="variable">
-                  </a>
+          <ul class="work-lists">
+            <li class="js-fade">
+              <div class="site">パグ好きのための写真投稿サイト</div>
+              <div class="visual">
+                <a href="https://pugpic-django.herokuapp.com/" target="_blank" class="toGray">
+                  <img src="common/img/work_8.jpg" alt="パグ好きのための写真投稿サイト" class="img-responsive">
+                </a>
+              </div>
+              <div class="work-info">
+                <div class="url">
+                  <div class="title"><span>URL</span></div>
+                  <a href="https://pugpic-django.herokuapp.com/" target="_blank">https://pugpic-django.herokuapp.com/</a>
                 </div>
-                <div class="info">
-                  <div class="url">
-                    <div class="title"><span>URL</span></div>
-                    <a href="https://qiita.com/nochifuchi/items/505bdd7c9d2eee4c1997" target="_blank">https://qiita.com/nochifuchi/items/505bdd7c9d2eee4c1997</a>
-                  </div>
-                  <div class="tool">
-                    <div class="title"><span>使用ツール</span></div>
-                    Google Colaboratory / Python / Pandas
-                  </div>
-                  <div class="point">
-                    <div class="title"><span>詳細</span></div>
-                    SpotifyのAPIを使い、日本のトップチャートの音楽を分析しました。
-                    環境はGoogle Colaboratoryで、PythonとPandasを使い音楽情報をCSVに出力しました。
-                  </div>
+                <div class="tool">
+                  <div class="title"><span>使用ツール</span></div>
+                  Django / HTML/css(sass) / jQuey/ SQlite<br>Heroku / Cloudinary
                 </div>
-              </li>
-              <li class="js-fade">
-                <div class="site">LINE お天気お知らせBOT</div>
-                <div class="visual">
-                  <a href="https://note.mu/nochifuchi/n/n64b84fc7f662" target="_blank" class="toGray">
-                    <img src="common/img/work_6.jpg" alt="LINE お天気お知らせBOT" class="variable">
-                  </a>
+                <div class="point">
+                  <div class="title"><span>詳細</span></div>
+                  Djangoを使い、写真投稿サイトを作りました。主な機能に関してはGithubをご覧ください。
+                  <p><a class="link-text" href="https://github.com/nochifuchi/pugpic-django">Github</a></p>
                 </div>
-                <div class="info">
-                  <div class="url">
-                    <div class="title"><span>URL</span></div>
-                    <a href="https://note.mu/nochifuchi/n/n64b84fc7f662" target="_blank">https://note.mu/nochifuchi/n/n64b84fc7f662</a>
-                  </div>
-                  <div class="tool">
-                    <div class="title"><span>使用ツール</span></div>
-                    LINE Notify / Google Apps Script
-                  </div>
-                  <div class="point">
-                    <div class="title"><span>詳細</span></div>
-                    LINE NotifyとGoogle Apps Scriptを使って、その日の天気予報と明日の予報をLINEで受け取れるものを作りました。
-                    午前と午後を判断して、午前であればその日の天気予報、午後であれば明日の天気をお知らせします。
-                  </div>
+              </div>
+            </li>
+            <li class="js-fade">
+              <div class="site">Spotify APIを使った音楽分析</div>
+              <div class="visual">
+                <a href="https://qiita.com/nochifuchi/items/505bdd7c9d2eee4c1997" target="_blank" class="toGray">
+                  <img src="common/img/work_7.jpg" alt="Spotify API" class="img-responsive">
+                </a>
+              </div>
+              <div class="work-info">
+                <div class="url">
+                  <div class="title"><span>URL</span></div>
+                  <a href="https://qiita.com/nochifuchi/items/505bdd7c9d2eee4c1997" target="_blank">https://qiita.com/nochifuchi/items/505bdd7c9d2eee4c1997</a>
                 </div>
-              </li>
-              <li class="js-fade">
-                <div class="site">Django study Blog</div>
-                <div class="visual">
-                  <a href="http://nochifuchi.pythonanywhere.com/" target="_blank" class="toGray">
-                    <img src="common/img/work_5.jpg" alt="Django Study Blog" class="variable">
-                  </a>
+                <div class="tool">
+                  <div class="title"><span>使用ツール</span></div>
+                  Google Colaboratory / Python / Pandas
                 </div>
-                <div class="info">
-                  <div class="url">
-                    <div class="title"><span>URL</span></div>
-                    <a href="http://nochifuchi.pythonanywhere.com/" target="_blank">http://nochifuchi.pythonanywhere.com/</a>
-                  </div>
-                  <div class="tool">
-                    <div class="title"><span>使用ツール</span></div>
-                    Python / Django / Visual Studio Code / HTML / CSS
-                  </div>
-                  <div class="point">
-                    <div class="title"><span>詳細</span></div>
-                    PythonのフレームワークのDjangoを使用した、サンプルのブログを作成しました。
-                    Djangoのチュートリアルを参考に実装しました。
-                  </div>
+                <div class="point">
+                  <div class="title"><span>詳細</span></div>
+                  SpotifyのAPIを使い、日本のトップチャートの音楽を分析しました。
+                  環境はGoogle Colaboratoryで、PythonとPandasを使い音楽情報をCSVに出力しました。
                 </div>
-              </li>
-              <li class="js-fade">
-                <div class="site">NATURAL LABORATORY</div>
-                <div class="visual">
-                  <a href="https://www.aiki-natulabo.com/" target="_blank" class="toGray">
-                    <img src="common/img/work_4.jpg" alt="NATURAL LABORATORY" class="variable">
-                  </a>
+              </div>
+            </li>
+            <li class="js-fade">
+              <div class="site">LINE お天気お知らせBOT</div>
+              <div class="visual">
+                <a href="https://note.mu/nochifuchi/n/n64b84fc7f662" target="_blank" class="toGray">
+                  <img src="common/img/work_6.jpg" alt="LINE お天気お知らせBOT" class="img-responsive">
+                </a>
+              </div>
+              <div class="work-info">
+                <div class="url">
+                  <div class="title"><span>URL</span></div>
+                  <a href="https://note.mu/nochifuchi/n/n64b84fc7f662" target="_blank">https://note.mu/nochifuchi/n/n64b84fc7f662</a>
                 </div>
-                <div class="info">
-                  <div class="url">
-                    <div class="title"><span>URL</span></div>
-                    <a href="https://www.aiki-natulabo.com" target="_blank">https://www.aiki-natulabo.com</a>
-                  </div>
-                  <div class="tool">
-                    <div class="title"><span>使用ツール</span></div>
-                    Wix / Sublime Text 2 / HTML / CSS
-                  </div>
-                  <div class="detail">
-                    <div class="title"><span>担当業務</span></div>
-                    導入されていたWixを使用したサイトリニューアル
-                  </div>
-                  <div class="point">
-                    <div class="title"><span>詳細</span></div>
-                    土地の良さ、新鮮な野菜が伝わるような写真を撮影し、トップイメージにしてみました。また、サイトカラーや文字色を会社のロゴの色に合わせてデザインしました。
-                  </div>
+                <div class="tool">
+                  <div class="title"><span>使用ツール</span></div>
+                  LINE Notify / Google Apps Script
                 </div>
-              </li>
-              <li class="js-fade">
-                <div class="site">ONWARD CROSSET</div>
-                <div class="visual">
-                  <a href="https://crosset.onward.co.jp" target="_blank" class="toGray">
-                    <img src="common/img/work_3.jpg" alt="ONWARD CROSSET" class="variable">
-                  </a>
+                <div class="point">
+                  <div class="title"><span>詳細</span></div>
+                  LINE NotifyとGoogle Apps Scriptを使って、その日の天気予報と明日の予報をLINEで受け取れるものを作りました。
+                  午前と午後を判断して、午前であればその日の天気予報、午後であれば明日の天気をお知らせします。
                 </div>
-                <div class="info">
-                  <div class="url">
-                    <div class="title"><span>URL</span></div>
-                    <a href="https://crosset.onward.co.jp" target="_blank">https://crosset.onward.co.jp</a>
-                  </div>
-                  <div class="tool">
-                    <div class="title"><span>使用ツール</span></div>
-                    Sublime Text 2 / Photoshop / HTML / Sass / Gulp / jQuery / PHP
-                  </div>
-                  <div class="detail">
-                    <div class="title"><span>担当業務</span></div>
-                    全面リニューアルに伴うPC、スマホ、モバイルのコーディング(HTML、CSS、jQuery、PHP) <br>
-                    リニューアル後の更新作業・管理
-                  </div>
-                  <div class="point">
-                    <div class="title"><span>詳細</span></div>
-                    コーディングの際に共通部分を別ファイル化したり、パーツ毎にファイルを分けて管理しやすいような構造にしました。また、SassやGulpを使用し、コーディングの効率化を図りました。
-                  </div>
+              </div>
+            </li>
+            <li class="js-fade">
+              <div class="site">Django study Blog</div>
+              <div class="visual">
+                <a href="http://nochifuchi.pythonanywhere.com/" target="_blank" class="toGray">
+                  <img src="common/img/work_5.jpg" alt="Django Study Blog" class="img-responsive">
+                </a>
+              </div>
+              <div class="work-info">
+                <div class="url">
+                  <div class="title"><span>URL</span></div>
+                  <a href="http://nochifuchi.pythonanywhere.com/" target="_blank">http://nochifuchi.pythonanywhere.com/</a>
                 </div>
-              </li>
-              <li class="js-fade">
-                <div class="site">Natu Savon</div>
-                <div class="visual">
-                  <a href="http://www.natusavon.com" target="_blank" media="" class="toGray">
-                    <img src="common/img/work_2.jpg" alt="natu savon" class="variable">
-                  </a>
+                <div class="tool">
+                  <div class="title"><span>使用ツール</span></div>
+                  Python / Django / Visual Studio Code / HTML / CSS
                 </div>
-                <div class="info">
-                  <div class="url">
-                    <div class="title"><span>URL</span></div>
-                    <a href="http://www.natusavon.com" target="_blank">http://www.natusavon.com</a>
-                  </div>
-                  <div class="tool">
-                    <div class="title"><span>使用ツール</span></div>
-                    Sublime Text 2 / Photoshop / HTML / jQuery
-                  </div>
-                  <div class="detail">
-                    <div class="title"><span>担当業務</span></div>
-                    レスポンシブサイトのコーディングを担当。
-                  </div>
-                  <div class="point">
-                    <div class="title"><span>詳細</span></div>
-                    PC、スマホで共通化できる部分を多くし、なるべくHTMLをシンプルで少ない構造にするようにしました。また、CSSアニメーションやjQueryの簡単な演出を加え、動きのあるサイトになるようにしました。
-                  </div>
+                <div class="point">
+                  <div class="title"><span>詳細</span></div>
+                  PythonのフレームワークのDjangoを使用した、サンプルのブログを作成しました。
+                  Djangoのチュートリアルを参考に実装しました。
                 </div>
-              </li>
-              <li class="js-fade">
-                <div class="site">ONIJUS COFFEE</div>
-                <div class="visual">
-                  <a href="http://onijus.com/sp/" target="_blank" media="" class="toGray">
-                    <img src="common/img/work_1.jpg" alt="ONIJUS COFFEE" class="variable">
-                  </a>
+              </div>
+            </li>
+            <li class="js-fade">
+              <div class="site">NATURAL LABORATORY</div>
+              <div class="visual">
+                <a href="https://www.aiki-natulabo.com/" target="_blank" class="toGray">
+                  <img src="common/img/work_4.jpg" alt="NATURAL LABORATORY" class="img-responsive">
+                </a>
+              </div>
+              <div class="work-info">
+                <div class="url">
+                  <div class="title"><span>URL</span></div>
+                  <a href="https://www.aiki-natulabo.com" target="_blank">https://www.aiki-natulabo.com</a>
                 </div>
-                <div class="info">
-                  <div class="url">
-                    <div class="title"><span>URL</span></div>
-                    <a href="http://onijus.com/sp/" target="_blank">http://onijus.com/sp/</a>
-                  </div>
-                  <div class="tool">
-                    <div class="title"><span>使用ツール</span></div>
-                    Sublime Text 2 / Photoshop / HTML / jQuery
-                  </div>
-                  <div class="detail">
-                    <div class="title"><span>担当業務</span></div>
-                    スマホ版のコーディングを担当。
-                  </div>
-                  <div class="point">
-                    <div class="title"><span>詳細</span></div>
-                    CSSアニメーションやjQueryの簡単な演出を加え、動きのあるサイトになるようにしました。
-                  </div>
+                <div class="tool">
+                  <div class="title"><span>使用ツール</span></div>
+                  Wix / Sublime Text 2 / HTML / CSS
                 </div>
-              </li>
-            </ul>
-          </div>
-        </div>
+                <div class="detail">
+                  <div class="title"><span>担当業務</span></div>
+                  導入されていたWixを使用したサイトリニューアル
+                </div>
+                <div class="point">
+                  <div class="title"><span>詳細</span></div>
+                  土地の良さ、新鮮な野菜が伝わるような写真を撮影し、トップイメージにしてみました。また、サイトカラーや文字色を会社のロゴの色に合わせてデザインしました。
+                </div>
+              </div>
+            </li>
+            <li class="js-fade">
+              <div class="site">ONWARD CROSSET</div>
+              <div class="visual">
+                <a href="https://crosset.onward.co.jp" target="_blank" class="toGray">
+                  <img src="common/img/work_3.jpg" alt="ONWARD CROSSET" class="img-responsive">
+                </a>
+              </div>
+              <div class="work-info">
+                <div class="url">
+                  <div class="title"><span>URL</span></div>
+                  <a href="https://crosset.onward.co.jp" target="_blank">https://crosset.onward.co.jp</a>
+                </div>
+                <div class="tool">
+                  <div class="title"><span>使用ツール</span></div>
+                  Sublime Text 2 / Photoshop / HTML / Sass / Gulp / jQuery / PHP
+                </div>
+                <div class="detail">
+                  <div class="title"><span>担当業務</span></div>
+                  全面リニューアルに伴うPC、スマホ、モバイルのコーディング(HTML、CSS、jQuery、PHP) <br>
+                  リニューアル後の更新作業・管理
+                </div>
+                <div class="point">
+                  <div class="title"><span>詳細</span></div>
+                  コーディングの際に共通部分を別ファイル化したり、パーツ毎にファイルを分けて管理しやすいような構造にしました。また、SassやGulpを使用し、コーディングの効率化を図りました。
+                </div>
+              </div>
+            </li>
+            <li class="js-fade">
+              <div class="site">Natu Savon</div>
+              <div class="visual">
+                <a href="http://www.natusavon.com" target="_blank" media="" class="toGray">
+                  <img src="common/img/work_2.jpg" alt="natu savon" class="img-responsive">
+                </a>
+              </div>
+              <div class="work-info">
+                <div class="url">
+                  <div class="title"><span>URL</span></div>
+                  <a href="http://www.natusavon.com" target="_blank">http://www.natusavon.com</a>
+                </div>
+                <div class="tool">
+                  <div class="title"><span>使用ツール</span></div>
+                  Sublime Text 2 / Photoshop / HTML / jQuery
+                </div>
+                <div class="detail">
+                  <div class="title"><span>担当業務</span></div>
+                  レスポンシブサイトのコーディングを担当。
+                </div>
+                <div class="point">
+                  <div class="title"><span>詳細</span></div>
+                  PC、スマホで共通化できる部分を多くし、なるべくHTMLをシンプルで少ない構造にするようにしました。また、CSSアニメーションやjQueryの簡単な演出を加え、動きのあるサイトになるようにしました。
+                </div>
+              </div>
+            </li>
+            <li class="js-fade">
+              <div class="site">ONIJUS COFFEE</div>
+              <div class="visual">
+                <a href="http://onijus.com/sp/" target="_blank" media="" class="toGray">
+                  <img src="common/img/work_1.jpg" alt="ONIJUS COFFEE" class="img-responsive">
+                </a>
+              </div>
+              <div class="work-info">
+                <div class="url">
+                  <div class="title"><span>URL</span></div>
+                  <a href="http://onijus.com/sp/" target="_blank">http://onijus.com/sp/</a>
+                </div>
+                <div class="tool">
+                  <div class="title"><span>使用ツール</span></div>
+                  Sublime Text 2 / Photoshop / HTML / jQuery
+                </div>
+                <div class="detail">
+                  <div class="title"><span>担当業務</span></div>
+                  スマホ版のコーディングを担当。
+                </div>
+                <div class="point">
+                  <div class="title"><span>詳細</span></div>
+                  CSSアニメーションやjQueryの簡単な演出を加え、動きのあるサイトになるようにしました。
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
         <!-- /works -->
 
         <!-- about -->
-        <div id="about" class="section">
+        <section id="about" class="section">
           <h3>about</h3>
           <div class="profile js-fade">
             <ul>
@@ -309,14 +326,14 @@
               </li>
             </ul>
           </div>
-        </div>
+        </section>
         <!-- /about -->
 
         <!-- contact -->
-        <div id="contact" class="section">
+        <section id="contact" class="section">
           <h3>contact</h3>
           <div class="mail"><a href="mailto:fumitaka05@gmail.com"><img src="common/img/icon_mail.png" alt="" width="23">fumitaka05@gmail.com</a></div>
-        </div>
+        </section>
         <!-- /contact -->
 
       </div>
