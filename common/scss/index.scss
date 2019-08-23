@@ -3,7 +3,7 @@
 
 /* section */
 .section {
-  margin-bottom: 30px;
+  padding: 30px;
 }
 .section:last-child {
   margin-bottom: 0;
@@ -14,13 +14,13 @@ h3 {
   font-size: 35px;
   text-align: center;
   margin-bottom: 60px;
-}
-h3::after {
-  display: block;
-  width: 50px;
-  margin: 10px auto 0;
-  border-bottom: 2px solid #000;
-  content: "";
+  &:after {
+    display: block;
+    width: 50px;
+    margin: 5px auto 0;
+    border-bottom: 2px solid #000;
+    content: "";
+  }
 }
 
 /*----------------------------
@@ -123,25 +123,32 @@ h2 {
 /*----------------------------
   about
 -----------------------------*/
-#about .profile ul li {
-  overflow: hidden;
-  margin-bottom: 25px;
+#about {
+  background: $white;
 }
-#about .profile ul li:last-child {
-  margin-bottom: 0;
+.about-me {
+  display: flex;
+  align-items: center;
 }
-#about .profile ul li .title {
-  width: 35%;
-  float: left;
+.about-visual {
+  width: 40%;
+  img {
+    width: 80%;
+  }
 }
-#about .profile ul li .title .name {
-  display: inline-block;
-  font-size: 25px;
-  /* font-weight: bold; */
+.about-detail {
+  width: 60%;
 }
-#about .profile ul li .detail {
-  width: 65%;
-  float: left;
+.about-detail > li {
+  & + li {
+    margin-top: 10px;
+  }
+}
+.about-detail .title {
+  font-family: $FOT-Tsuku;
+  font-size: 20px;
+  margin-bottom: 10px;
+  border-bottom: 2px dashed $blue;
 }
 
 /*----------------------------
@@ -157,7 +164,13 @@ h2 {
   text-align: center;
   padding: 20px;
   border: 3px solid #000;
-  font-size: 20px;
+  font-size: 18px;
+  &:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: '\f0e0';
+    margin-right: 5px;
+  }
 }
 #contact .mail a:hover {
   box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);
@@ -222,20 +235,22 @@ h2 {
     }
   }
 
-  /* about */
-  #about .profile ul li .title {
-    margin-bottom: 2%;
-    border-bottom: 2px solid #666;
+  /*----------------------------
+    about
+  -----------------------------*/
+  .about-me {
+    display: block;
   }
-  #about .profile ul li .title,
-  #about .profile ul li .detail {
+  .about-visual {
     width: 100%;
-    float: none;
+    margin-bottom: 30px;
+    text-align: center;
+    img {
+      width: 60%;
+    }
   }
-  #about .profile ul li .title .name {
-    display: inline-block;
-    font-size: 20px;
-    font-weight: bold;
+  .about-detail {
+    width: 100%;
   }
 
 }

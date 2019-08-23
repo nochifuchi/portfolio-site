@@ -96,6 +96,11 @@ legend {
           filter: grayscale(100%);
 }
 
+.img-circle {
+  border-radius: 50%;
+  border: 1px solid #bfbfbf;
+}
+
 html, body {
   font-family: "Noto Sans Japanese", "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", MS PGothic, sans-serif;
   font-size: 13px;
@@ -125,6 +130,10 @@ a:hover {
   color: #8c8c8c;
 }
 
+p + p {
+  margin-top: 10px;
+}
+
 .img-responsive {
   width: 100%;
 }
@@ -133,14 +142,6 @@ a:hover {
 .container {
   width: 1000px;
   margin: 0 auto;
-}
-
-#contents {
-  margin-bottom: 30px;
-}
-
-#contents .wrap {
-  margin-top: 30px;
 }
 
 .inner {
