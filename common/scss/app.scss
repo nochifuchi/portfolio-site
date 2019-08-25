@@ -22,9 +22,14 @@ a {
   transition: all 0.2s ease;
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
+  text-decoration: underline;
   &:hover {
     color: $link-hover-color;
+    text-decoration: none;
   }
+}
+a.no-underline {
+  text-decoration: none;
 }
 
 p + p {

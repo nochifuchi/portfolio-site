@@ -124,10 +124,16 @@ a {
   transition: all 0.2s ease;
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
+  text-decoration: underline;
 }
 
 a:hover {
   color: #8c8c8c;
+  text-decoration: none;
+}
+
+a.no-underline {
+  text-decoration: none;
 }
 
 p + p {

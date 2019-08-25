@@ -177,13 +177,82 @@ h2 {
 .about-detail .title {
   font-family: fot-tsukuardgothic-std, sans-serif;
   font-size: 20px;
-  margin-bottom: 10px;
-  border-bottom: 2px dashed #007ebe;
+}
+
+/*----------------------------
+  skill
+-----------------------------*/
+.skill-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill-block + .skill-block {
+  margin-top: 10px;
+}
+
+.skill-title {
+  font-size: 18px;
+  font-family: fot-tsukuardgothic-std, sans-serif;
+}
+
+.skill-icons {
+  width: 45%;
+}
+
+.skill-lists {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill-lists li {
+  width: 100px;
+  background: #fff;
+  padding: 10px 0;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid #efefef;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px #efefef;
+}
+
+.skill-lists li:nth-of-type(4n) {
+  margin-right: 0;
+}
+
+.skill-lists .icon img {
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+}
+
+.skill-lists .name {
+  font-size: 11px;
+}
+
+.skill-detail {
+  width: 53%;
+}
+
+.skill-detail .info {
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+  border: 1px solid #efefef;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px #efefef;
 }
 
 /*----------------------------
   contact
 -----------------------------*/
+#contact {
+  background: #fff;
+}
+
 #contact .mail img {
   padding-right: 5px;
 }
