@@ -43,10 +43,10 @@
         </div>
         <nav>
           <ul>
-            <li><a href="#main-visual">home</a></li>
-            <li><a href="#works">Works</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a class="no-underline" href="#main-visual">home</a></li>
+            <li><a class="no-underline" href="#works">Works</a></li>
+            <li><a class="no-underline" href="#about">About</a></li>
+            <li><a class="no-underline" href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -56,10 +56,10 @@
           <h1>Portfolio</h1>
           <nav class="g-nav">
             <ul>
-              <li><a href="#main-visual">Home</a></li>
-              <li><a href="#works">Works</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a class="no-underline" href="#main-visual">Home</a></li>
+              <li><a class="no-underline" href="#works">Works</a></li>
+              <li><a class="no-underline" href="#about">About</a></li>
+              <li><a class="no-underline" href="#contact">Contact</a></li>
             </ul>
           </nav>
         </div>
@@ -75,246 +75,376 @@
 
     <!-- contents -->
     <div id="contents">
-      <div class="wrap container">
+      <div class="wrap">
 
         <!-- works -->
         <section id="works" class="section">
-          <h3>works</h3>
-          <ul class="work-lists">
-            <li class="js-fade">
-              <div class="site">パグ好きのための写真投稿サイト</div>
-              <div class="visual">
-                <a href="https://pugpic-django.herokuapp.com/" target="_blank" class="toGray">
-                  <img src="common/img/work_8.jpg" alt="パグ好きのための写真投稿サイト" class="img-responsive">
-                </a>
-              </div>
-              <div class="work-info">
-                <div class="url">
-                  <div class="title"><span>URL</span></div>
-                  <a href="https://pugpic-django.herokuapp.com/" target="_blank">https://pugpic-django.herokuapp.com/</a>
+          <div class="container">
+            <h3>works</h3>
+            <ul class="work-lists">
+              <li class="js-fade">
+                <div class="site">パグ好きのための写真投稿サイト</div>
+                <div class="visual">
+                  <a href="https://pugpic-django.herokuapp.com/" target="_blank" class="toGray">
+                    <img src="common/img/work_8.jpg" alt="パグ好きのための写真投稿サイト" class="img-responsive">
+                  </a>
                 </div>
-                <div class="tool">
-                  <div class="title"><span>使用ツール</span></div>
-                  Django / HTML・CSS(SASS) / jQuey/ SQlite<br>Heroku / Cloudinary / Visual Studio Code
-                </div>
-                <div class="point">
-                  <div class="title"><span>詳細</span></div>
-                  Djangoを使い、写真投稿サイトを作りました。主な機能に関してはGithubをご覧ください。
-                  <p><a class="link-text" href="https://github.com/nochifuchi/pugpic-django">Github</a></p>
-                </div>
-              </div>
-            </li>
-            <li class="js-fade">
-              <div class="site">Spotify APIを使った音楽分析</div>
-              <div class="visual">
-                <a href="https://qiita.com/nochifuchi/items/505bdd7c9d2eee4c1997" target="_blank" class="toGray">
-                  <img src="common/img/work_7.jpg" alt="Spotify API" class="img-responsive">
-                </a>
-              </div>
-              <div class="work-info">
-                <div class="url">
-                  <div class="title"><span>URL</span></div>
-                  <a href="https://qiita.com/nochifuchi/items/505bdd7c9d2eee4c1997" target="_blank">https://qiita.com/nochifuchi/items/505bdd7c9d2eee4c1997</a>
-                </div>
-                <div class="tool">
-                  <div class="title"><span>使用ツール</span></div>
-                  Google Colaboratory / Python / Pandas
-                </div>
-                <div class="point">
-                  <div class="title"><span>詳細</span></div>
-                  PythonとPandasを使用し、日本のトップチャートの音楽情報をSpotifyのAPIから取得し、CSVに出力しました。
-                  この制作を通して、PythonとPandasの基本的な使い方について学ぶことができました。
-                </div>
-              </div>
-            </li>
-            <li class="js-fade">
-              <div class="site">LINE お天気お知らせBOT</div>
-              <div class="visual">
-                <a href="https://note.mu/nochifuchi/n/n64b84fc7f662" target="_blank" class="toGray">
-                  <img src="common/img/work_6.jpg" alt="LINE お天気お知らせBOT" class="img-responsive">
-                </a>
-              </div>
-              <div class="work-info">
-                <div class="url">
-                  <div class="title"><span>URL</span></div>
-                  <a href="https://note.mu/nochifuchi/n/n64b84fc7f662" target="_blank">https://note.mu/nochifuchi/n/n64b84fc7f662</a>
-                </div>
-                <div class="tool">
-                  <div class="title"><span>使用ツール</span></div>
-                  LINE Notify / Google Apps Script
-                </div>
-                <div class="point">
-                  <div class="title"><span>詳細</span></div>
-                  LINE NotifyとGoogle Apps Scriptを使用し、その日の天気予報と明日の予報をLINEで受け取れるものを作りました。
-                  この制作を通してGoogle Apps Scriptの使い方とGoogle Apps ScriptとLINE Notifyの連携について学ぶことができました。
-                </div>
-              </div>
-            </li>
-            <li class="js-fade">
-              <div class="site">Django study Blog</div>
-              <div class="visual">
-                <a href="http://nochifuchi.pythonanywhere.com/" target="_blank" class="toGray">
-                  <img src="common/img/work_5.jpg" alt="Django Study Blog" class="img-responsive">
-                </a>
-              </div>
-              <div class="work-info">
-                <div class="url">
-                  <div class="title"><span>URL</span></div>
-                  <a href="http://nochifuchi.pythonanywhere.com/" target="_blank">http://nochifuchi.pythonanywhere.com/</a>
-                </div>
-                <div class="tool">
-                  <div class="title"><span>使用ツール</span></div>
-                  Python / Django / HTML・CSS<br>Visual Studio Code
-                </div>
-                <div class="point">
-                  <div class="title"><span>詳細</span></div>
-                  Djangoのチュートリアルに沿って制作したWebアプリケーションです。
-                  ブログの作成と閲覧をすることができます。このチュートリアルを通してDjangoの基本的な使い方について習得することができました。
-                </div>
-              </div>
-            </li>
-            <li class="js-fade">
-              <div class="site">NATURAL LABORATORY</div>
-              <div class="visual">
-                <a href="https://www.aiki-natulabo.com/" target="_blank" class="toGray">
-                  <img src="common/img/work_4.jpg" alt="NATURAL LABORATORY" class="img-responsive">
-                </a>
-              </div>
-              <div class="work-info">
-                <div class="url">
-                  <div class="title"><span>URL</span></div>
-                  <a href="https://www.aiki-natulabo.com" target="_blank">https://www.aiki-natulabo.com</a>
-                </div>
-                <div class="tool">
-                  <div class="title"><span>使用ツール</span></div>
-                  Wix / Sublime Text 2 / HTML・CSS
-                </div>
-                <div class="point">
-                  <div class="title"><span>詳細</span></div>
-                  土地の良さ、新鮮な野菜が伝わるような写真を撮影し、トップイメージにしてみました。また、サイトカラーや文字色を会社のロゴの色に合わせてデザインしました。
-                </div>
-              </div>
-            </li>
-            <li class="js-fade">
-              <div class="site">ONWARD CROSSET</div>
-              <div class="visual">
-                <a href="https://crosset.onward.co.jp" target="_blank" class="toGray">
-                  <img src="common/img/work_3.jpg" alt="ONWARD CROSSET" class="img-responsive">
-                </a>
-              </div>
-              <div class="work-info">
-                <div class="url">
-                  <div class="title"><span>URL</span></div>
-                  <a href="https://crosset.onward.co.jp" target="_blank">https://crosset.onward.co.jp</a>
-                </div>
-                <div class="tool">
-                  <div class="title"><span>使用ツール</span></div>
-                   HTML・CSS(SASS) / PHP / jQuery / MovableType<br>Photoshop / Sublime Text 2
-                </div>
-                <div class="point">
-                  <div class="title"><span>詳細</span></div>
-                  全面リニューアルに伴うPC、スマホ、モバイルのコーディングとリニューアル後の更新作業を行いました。
-                  コーディングの大半を一人で担当したことで、大規模ECサイトの制作方法やECの知識を学ぶことができました。
-                </div>
-              </div>
-            </li>
-            <li class="js-fade">
-              <div class="site">natu savon</div>
-              <div class="visual">
-                <img src="common/img/work_2.jpg" alt="natu savon" class="img-responsive">
-              </div>
-              <div class="work-info">
-                <div class="url">
-                  <div class="title"><span>URL</span></div>
-                  http://www.natusavon.com (現在は公開終了)
-                </div>
-                <div class="tool">
-                  <div class="title"><span>使用ツール</span></div>
-                  HTML・CSS / jQuery / Sublime Text 2 / Photoshop
-                </div>
-                <div class="point">
-                  <div class="title"><span>詳細</span></div>
-                  レスポンシブサイトのコーディングを担当しました。PC、スマホで共通化できる部分を多くし、なるべくHTMLをシンプルで少ない構造にするようにしました。また、CSSアニメーションやjQueryの簡単な演出を加え、動きのあるサイトになるようにしました。
-                </div>
-              </div>
-            </li>
-            <li class="js-fade">
-              <div class="site">ONIJUS COFFEE</div>
-              <div class="visual">
-                <a href="http://onijus.com/sp/" target="_blank" media="" class="toGray">
-                  <img src="common/img/work_1.jpg" alt="ONIJUS COFFEE" class="img-responsive">
-                </a>
-              </div>
-              <div class="work-info">
-                <div class="url">
-                  <div class="title"><span>URL</span></div>
-                  <a href="http://onijus.com/sp/" target="_blank">http://onijus.com/sp/</a>
-                </div>
-                <div class="tool">
-                  <div class="title"><span>使用ツール</span></div>
-                  HTML・CSS / jQuery / Photoshop / Sublime Text 2
-                </div>
-                <div class="point">
-                  <div class="title"><span>詳細</span></div>
-                  スマホ版のコーディングを担当しました。CSSアニメーションやjQueryの簡単な演出を加え、動きのあるサイトになるようにしました。
-                </div>
-              </div>
-            </li>
-          </ul>
-        </section>
-        <!-- /works -->
-
-        <!-- about -->
-        <section id="about" class="section">
-          <h3>about</h3>
-          <div class="profile js-fade">
-            <ul>
-              <li class="profile">
-                <div class="title">
-                  <div class="name">ノザワフミタカ</div>
-                  <div class="en">NOZAWA FUMITAKA</div>
-                </div>
-                <div class="detail">
-                  <p>埼玉県出身で札幌在住、WEBエンジニアを目指しています。<br>
-                  大学では農学を学んでいましたが、ものづくりが好きで身近にあったWEBにも興味があったので、独学で勉強しWEB業界に入りました。<br>
-                  WEB制作では管理しやすく、ユーザー目線で使いやすいサイト作りを心がけています。<br>
-                  好きなことは温泉やサウナでスーパー銭湯によく行っています。音楽も好きでよくライブに行ったり、フェスに行きます。</p>
+                <div class="work-info">
+                  <div class="url">
+                    <div class="title"><span>URL</span></div>
+                    <a href="https://pugpic-django.herokuapp.com/" target="_blank">https://pugpic-django.herokuapp.com/</a>
+                  </div>
+                  <div class="tool">
+                    <div class="title"><span>使用ツール</span></div>
+                    Django / HTML・CSS(SASS) / jQuey/ SQlite<br>Heroku / Cloudinary / Visual Studio Code
+                  </div>
+                  <div class="point">
+                    <div class="title"><span>詳細</span></div>
+                    Djangoを使い、写真投稿サイトを作りました。主な機能に関してはGithubをご覧ください。
+                    <p><a class="link-text" href="https://github.com/nochifuchi/pugpic-django">Github</a></p>
+                  </div>
                 </div>
               </li>
-              <li class="profile">
-                <div class="title">
-                  <div class="name">スキル</div>
-                  <div class="en">SKILL</div>
+              <li class="js-fade">
+                <div class="site">Spotify APIを使った音楽分析</div>
+                <div class="visual">
+                  <a href="https://qiita.com/nochifuchi/items/505bdd7c9d2eee4c1997" target="_blank" class="toGray">
+                    <img src="common/img/work_7.jpg" alt="Spotify API" class="img-responsive">
+                  </a>
                 </div>
-                <div class="detail">
-                  <p>HTML(5) / CSS(3) / Photoshop / jQuery / JavaScript / PHP / Python<br>
-                    HTMLはセマンティックにマークアップし、誰もが見やすい構造になるようにに心がけています。<br>
-                    CSSは無駄な記述を無くすことと、自分でも見やすく、さらに他の人が編集するときもわかりやすいような記述を心がけています。またSassの使用経験もあります。<br>
-                    Photoshopは基本的な操作はできるので、さらにスキルアップしたいと思い現在学んでいます。<br>
-                    jQueryやJavaScript、PHPは基礎的な知識は習得しているので、さらにブラッシュアップするために学習に励んでいます。</p>
+                <div class="work-info">
+                  <div class="url">
+                    <div class="title"><span>URL</span></div>
+                    <a href="https://qiita.com/nochifuchi/items/505bdd7c9d2eee4c1997" target="_blank">https://qiita.com/nochifuchi/items/505bdd7c9d2eee4c1997</a>
+                  </div>
+                  <div class="tool">
+                    <div class="title"><span>使用ツール</span></div>
+                    Google Colaboratory / Python / Pandas
+                  </div>
+                  <div class="point">
+                    <div class="title"><span>詳細</span></div>
+                    PythonとPandasを使用し、日本のトップチャートの音楽情報をSpotifyのAPIから取得し、CSVに出力しました。
+                    この制作を通して、PythonとPandasの基本的な使い方について学ぶことができました。
+                  </div>
                 </div>
               </li>
-              <li class="profile">
-                <div class="title">
-                  <div class="name">ブログ</div>
-                  <div class="en">BLOG</div>
+              <li class="js-fade">
+                <div class="site">LINE お天気お知らせBOT</div>
+                <div class="visual">
+                  <a href="https://note.mu/nochifuchi/n/n64b84fc7f662" target="_blank" class="toGray">
+                    <img src="common/img/work_6.jpg" alt="LINE お天気お知らせBOT" class="img-responsive">
+                  </a>
                 </div>
-                <div class="detail">
-                  <p>ブログをやっています。<br>
-                  まだはじめたばかりですが、これから作ったサービスや気づいたこと、備忘録などを少しずつ追加していきたいと思っています。</p>
-                  <p>note：<a href="https://note.mu/nochifuchi" target="_blank">https://note.mu/nochifuchi</a></p>
-                  <p>Qiita：<a href="https://qiita.com/nochifuchi" target="_blank">https://qiita.com/nochifuchi</a></p>
+                <div class="work-info">
+                  <div class="url">
+                    <div class="title"><span>URL</span></div>
+                    <a href="https://note.mu/nochifuchi/n/n64b84fc7f662" target="_blank">https://note.mu/nochifuchi/n/n64b84fc7f662</a>
+                  </div>
+                  <div class="tool">
+                    <div class="title"><span>使用ツール</span></div>
+                    LINE Notify / Google Apps Script
+                  </div>
+                  <div class="point">
+                    <div class="title"><span>詳細</span></div>
+                    LINE NotifyとGoogle Apps Scriptを使用し、その日の天気予報と明日の予報をLINEで受け取れるものを作りました。
+                    この制作を通してGoogle Apps Scriptの使い方とGoogle Apps ScriptとLINE Notifyの連携について学ぶことができました。
+                  </div>
+                </div>
+              </li>
+              <li class="js-fade">
+                <div class="site">Django study Blog</div>
+                <div class="visual">
+                  <a href="http://nochifuchi.pythonanywhere.com/" target="_blank" class="toGray">
+                    <img src="common/img/work_5.jpg" alt="Django Study Blog" class="img-responsive">
+                  </a>
+                </div>
+                <div class="work-info">
+                  <div class="url">
+                    <div class="title"><span>URL</span></div>
+                    <a href="http://nochifuchi.pythonanywhere.com/" target="_blank">http://nochifuchi.pythonanywhere.com/</a>
+                  </div>
+                  <div class="tool">
+                    <div class="title"><span>使用ツール</span></div>
+                    Python / Django / HTML・CSS<br>Visual Studio Code
+                  </div>
+                  <div class="point">
+                    <div class="title"><span>詳細</span></div>
+                    Djangoのチュートリアルに沿って制作したWebアプリケーションです。
+                    ブログの作成と閲覧をすることができます。このチュートリアルを通してDjangoの基本的な使い方について習得することができました。
+                  </div>
+                </div>
+              </li>
+              <li class="js-fade">
+                <div class="site">NATURAL LABORATORY</div>
+                <div class="visual">
+                  <a href="https://www.aiki-natulabo.com/" target="_blank" class="toGray">
+                    <img src="common/img/work_4.jpg" alt="NATURAL LABORATORY" class="img-responsive">
+                  </a>
+                </div>
+                <div class="work-info">
+                  <div class="url">
+                    <div class="title"><span>URL</span></div>
+                    <a href="https://www.aiki-natulabo.com" target="_blank">https://www.aiki-natulabo.com</a>
+                  </div>
+                  <div class="tool">
+                    <div class="title"><span>使用ツール</span></div>
+                    Wix / Sublime Text 2 / HTML・CSS
+                  </div>
+                  <div class="point">
+                    <div class="title"><span>詳細</span></div>
+                    土地の良さ、新鮮な野菜が伝わるような写真を撮影し、トップイメージにしてみました。また、サイトカラーや文字色を会社のロゴの色に合わせてデザインしました。
+                  </div>
+                </div>
+              </li>
+              <li class="js-fade">
+                <div class="site">ONWARD CROSSET</div>
+                <div class="visual">
+                  <a href="https://crosset.onward.co.jp" target="_blank" class="toGray">
+                    <img src="common/img/work_3.jpg" alt="ONWARD CROSSET" class="img-responsive">
+                  </a>
+                </div>
+                <div class="work-info">
+                  <div class="url">
+                    <div class="title"><span>URL</span></div>
+                    <a href="https://crosset.onward.co.jp" target="_blank">https://crosset.onward.co.jp</a>
+                  </div>
+                  <div class="tool">
+                    <div class="title"><span>使用ツール</span></div>
+                    HTML・CSS(SASS) / PHP / jQuery / MovableType<br>Photoshop / Sublime Text 2
+                  </div>
+                  <div class="point">
+                    <div class="title"><span>詳細</span></div>
+                    全面リニューアルに伴うPC、スマホ、モバイルのコーディングとリニューアル後の更新作業を行いました。
+                    コーディングの大半を一人で担当したことで、大規模ECサイトの制作方法やECの知識を学ぶことができました。
+                  </div>
+                </div>
+              </li>
+              <li class="js-fade">
+                <div class="site">natu savon</div>
+                <div class="visual">
+                  <img src="common/img/work_2.jpg" alt="natu savon" class="img-responsive">
+                </div>
+                <div class="work-info">
+                  <div class="url">
+                    <div class="title"><span>URL</span></div>
+                    http://www.natusavon.com (現在は公開終了)
+                  </div>
+                  <div class="tool">
+                    <div class="title"><span>使用ツール</span></div>
+                    HTML・CSS / jQuery / Sublime Text 2 / Photoshop
+                  </div>
+                  <div class="point">
+                    <div class="title"><span>詳細</span></div>
+                    レスポンシブサイトのコーディングを担当しました。PC、スマホで共通化できる部分を多くし、なるべくHTMLをシンプルで少ない構造にするようにしました。また、CSSアニメーションやjQueryの簡単な演出を加え、動きのあるサイトになるようにしました。
+                  </div>
+                </div>
+              </li>
+              <li class="js-fade">
+                <div class="site">ONIJUS COFFEE</div>
+                <div class="visual">
+                  <a href="http://onijus.com/sp/" target="_blank" media="" class="toGray">
+                    <img src="common/img/work_1.jpg" alt="ONIJUS COFFEE" class="img-responsive">
+                  </a>
+                </div>
+                <div class="work-info">
+                  <div class="url">
+                    <div class="title"><span>URL</span></div>
+                    <a href="http://onijus.com/sp/" target="_blank">http://onijus.com/sp/</a>
+                  </div>
+                  <div class="tool">
+                    <div class="title"><span>使用ツール</span></div>
+                    HTML・CSS / jQuery / Photoshop / Sublime Text 2
+                  </div>
+                  <div class="point">
+                    <div class="title"><span>詳細</span></div>
+                    スマホ版のコーディングを担当しました。CSSアニメーションやjQueryの簡単な演出を加え、動きのあるサイトになるようにしました。
+                  </div>
                 </div>
               </li>
             </ul>
           </div>
         </section>
+        <!-- /works -->
+
+        <!-- about -->
+        <section id="about" class="section">
+          <div class="container">
+            <h3>about</h3>
+            <ul class="about-me">
+              <div class="about-visual js-fade"><img class="img-circle" src="common/img/about_visual.jpg" alt=""></div>
+              <ul class="about-detail js-fade">
+                <li class="profile">
+                  <div class="title">Profile</div>
+                  <p>埼玉県出身でWEBエンジニアを目指しています。<br>
+                  大学では農学を学んでいましたが、ものづくりが好きで身近にあったWEBに興味があり、独学で勉強しWEB業界に入りました。<br>
+                  WEB制作ではコーポレートサイトやキャンペーンサイトなどを中心に開発の経験があります。またEC制作会社では2年目にコーダー主担当として大手アパレルブランンドのECサイトのコーディングを担当させていただきました。</p>
+                  <p>WEB業界を経験した後、若いうちに今まで学んできたことを活かして地域貢献したいと思い、1年間地域おこし協力隊として長野県に住んでおりました。<br>地域おこし協力隊のときに商品開発した<a href="https://www.hokurikushinkansen-navi.jp/pc/news/article.php?id=NEWS0000015256" target="_blank">もろこしジェラート</a></p>
+                </li>
+                <li class="like">
+                  <div class="title">Like</div>
+                  <p>・温泉・サウナ（サウナスパ検定とりたい）<br>
+                  ・音楽（ライブ、フェス、レコード集め）<br>
+                  ・ゲーム（見るのもやるのも好き）<br>
+                  ・映画・アニメ(映画館やAmazon Primeで鑑賞)<br>
+                  ・料理(つくりおきおかず、燻製料理)<br>
+                  ・キャンプ（今後趣味にしたい）</p>
+                </li>
+                <li class="links">
+                  <div class="title">Links</div>
+                  <p>作ったサービスや気づいたこと、備忘録などを少しずつ追加していきたいと思っています。</p>
+                  <p>
+                    note：<a href="https://note.mu/nochifuchi" target="_blank">https://note.mu/nochifuchi</a><br>
+                    Qiita：<a href="https://qiita.com/nochifuchi" target="_blank">https://qiita.com/nochifuchi</a>
+                  </p>
+                </li>
+              </p>
+            </div>
+          </div>
+        </section>
         <!-- /about -->
+
+        <section id="skill" class="section">
+          <div class="container">
+            <h3>skill</h3>
+            <div class="skill-wrapper">
+              <div class="skill-icons">
+                <div class="skill-block">
+                  <div class="skill-title">Frontend</div>
+                  <ul class="skill-lists">
+                    <li>
+                      <div class="icon"><img src="common/img/icons/html5.png" alt=""></div>
+                      <div class="name">HTML5</div>
+                    </li>
+                    <li>
+                      <div class="icon"><img src="common/img/icons/css.png" alt=""></div>
+                      <div class="name">CSS3</div>
+                    </li>
+                    <li>
+                      <div class="icon"><img src="common/img/icons/sass.png" alt=""></div>
+                      <div class="name">Sass</div>
+                    </li>
+                    <li>
+                      <div class="icon"><img src="common/img/icons/javascript.jpg" alt=""></div>
+                      <div class="name">JavaScript</div>
+                    </li>
+                    <li>
+                      <div class="icon"><img src="common/img/icons/jquery.png" alt=""></div>
+                      <div class="name">jQuery</div>
+                    </li>
+                    <li>
+                      <div class="icon"><img src="common/img/icons/photoshop.png" alt=""></div>
+                      <div class="name">Photshop</div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="skill-block">
+                  <div class="skill-title">Backend</div>
+                  <ul class="skill-lists">
+                    <li>
+                      <div class="icon"><img src="common/img/icons/python.png" alt=""></div>
+                      <div class="name">Python</div>
+                    </li>
+                    <li>
+                      <div class="icon"><img src="common/img/icons/django.png" alt=""></div>
+                      <div class="name">Django</div>
+                    </li>
+                    <li>
+                      <div class="icon"><img src="common/img/icons/php.png" alt=""></div>
+                      <div class="name">PHP</div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="skill-block">
+                  <div class="skill-title">Tools</div>
+                  <ul class="skill-lists">
+                    <li>
+                      <div class="icon"><img src="common/img/icons/vscode.png" alt=""></div>
+                      <div class="name">VS Code</div>
+                    </li>
+                    <li>
+                      <div class="icon"><img src="common/img/icons/gulp.png" alt=""></div>
+                      <div class="name">Gulp</div>
+                    </li>
+                    <li>
+                      <div class="icon"><img src="common/img/icons/git.png" alt=""></div>
+                      <div class="name">Git</div>
+                    </li>
+                    <li>
+                      <div class="icon"><img src="common/img/icons/github.png" alt=""></div>
+                      <div class="name">Github</div>
+                    </li>
+                    <li>
+                      <div class="icon"><img src="common/img/icons/heroku.png" alt=""></div>
+                      <div class="name">Heroku</div>
+                    </li>
+                    <li>
+                      <div class="icon"><img src="common/img/icons/font-awesome.png" alt=""></div>
+                      <div class="name">Font Awesome</div>
+                    </li>
+                    <li>
+                      <div class="icon"><img src="common/img/icons/slack.jpg" alt=""></div>
+                      <div class="name">Slack</div>
+                    </li>
+                    <li>
+                      <div class="icon"><img src="common/img/icons/trello.png" alt=""></div>
+                      <div class="name">Trello</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="skill-detail">
+                <div class="skill-block">
+                  <div class="skill-title">フロントエンド</div>
+                  <div class="info">
+                    <p>《HTML・CSS》（実務経験３年程度）<br>
+                    ・PC・SP・レスポンシブサイトのコーディング（HTML5、CSS3）<br>
+                    ・Bootstrap<br>
+                    ・SASS、Gulpを使用<br>
+                    ・Emmetを使ったコーディング</p>
+                    <p>《Javascript・jQuery》（実務経験３年程度）<br>
+                    ・基礎的な知識(ES6)<br>
+                    ・簡単な演出・制御（関数、条件分岐、フォーム関連の制御、スライダー作成など）<br>
+                    ・プラグインの導入<br>
+                    ・Google Apps Scriptを使ったBOT開発<br></p>
+                    <p>《Photoshop》（実務経験３年程度）<br>
+                    ・基本的な操作（画像書き出し、レイヤー、レイヤーマスクなど）<br>
+                    ・簡単なバナー作成</p>
+                  </div>
+                </div>
+                <div class="skill-block">
+                  <div class="skill-title">バックエンド</div>
+                  <div class="info">
+                    <p>《PHP》（実務経験1年程度）<br>
+                    ・基礎的な知識<br>
+                    ・Movable Typeと連携した、ページ構築</p>
+                    <p>《Python》<br>
+                    ・基礎的な知識<br>
+                    ・Pandasを使った簡単なデータ分析<br>
+                    ・Djangoを使ったWebサービスの開発</p>
+                  </div>
+                </div>
+                <div class="skill-block">
+                  <div class="skill-title">ツール</div>
+                  <div class="info">
+                    <p>《テキストエディタ》<br>
+                    ・Visual Studio Code</p>
+                    <p>《Github》<br>
+                      ・<a href="https://github.com/nochifuchi" target="_blank">https://github.com/nochifuchi</a></p>
+                    <p>《タスク管理》<br>
+                      ・Trello</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <!-- contact -->
         <section id="contact" class="section">
-          <h3>contact</h3>
-          <div class="mail"><a href="mailto:fumitaka05@gmail.com"><img src="common/img/icon_mail.png" alt="" width="23">fumitaka05@gmail.com</a></div>
+          <div class="container">
+            <h3>contact</h3>
+            <div class="mail"><a class="no-underline" href="mailto:fumitaka05@gmail.com">fumitaka05@gmail.com</a></div>
+          </div>
         </section>
         <!-- /contact -->
 
