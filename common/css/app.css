@@ -203,7 +203,7 @@ p + p {
   transition-delay: 150ms;
 }
 
-.js-fade:nth-of-type(3), .js-fade:nth-of-type(6) {
+.js-fade:nth-of-type(3), .js-fade:nth-of-type(6), .js-fade:nth-of-type(9) {
   transition-delay: 300ms;
 }
 
