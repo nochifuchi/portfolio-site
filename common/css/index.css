@@ -326,7 +326,7 @@ h2 {
     margin-right: 0;
   }
   .work-lists > li:nth-child(3n) {
-    margin-right: 2%;
+    margin-right: 0;
   }
 }
 
