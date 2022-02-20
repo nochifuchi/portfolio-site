@@ -14,12 +14,22 @@ h3 {
   font-size: 35px;
   text-align: center;
   margin-bottom: 60px;
+
   &:after {
     display: block;
     width: 50px;
     margin: 5px auto 0;
     border-bottom: 2px solid #000;
     content: "";
+  }
+
+  &.js-fade {
+    opacity: 0;
+    transition: all 0.5s ease-in;
+
+    &.show {
+      opacity: 1;
+    }
   }
 }
 
@@ -29,7 +39,6 @@ h3 {
 #main-visual {
   position: relative;
   opacity: 0;
-  -webkit-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
   height: 450px;
   background: linear-gradient( 135deg, rgba(108, 148, 211, 0.8), rgba(111, 210, 237, 0.5));
@@ -45,8 +54,13 @@ h2 {
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0;
+  transition: all 0.5s ease-in;
   transform: translate(-50%, -50%);
   text-align: center;
+  &.show {
+    opacity: 1;
+  }
 }
 
 /*----------------------------
