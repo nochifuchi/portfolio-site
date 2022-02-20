@@ -1,84 +1,95 @@
-//loading
-$(function() {
-  $('#main-visual').addClass('show');
+// hero
+document.addEventListener('DOMContentLoaded', function() {
+  const hero = document.querySelector('#main-visual');
+  const heroLead = document.querySelector('#main-visual h2');
+
+  hero.classList.add('show');
+  setTimeout(function() {
+    heroLead.classList.add('show');
+  }, 700);
 });
 
-//fade contents
-$(function() {
-  $(window).scroll(function() {
-    $('.js-fade').each(function() {
-      var conPos = $(this).offset().top;
-      var scroll = $(window).scrollTop();
-      var windowH = $(window).height();
-      if ( scroll > conPos - windowH + 200 ) {
-        $(this).addClass('show');
-      }
-    });
-  });
-});
+// navbar
+document.addEventListener('DOMContentLoaded', function() {
+  const navBar = document.querySelector('.navbar');
 
-//navbar
-$(function() {
-  let navbar = $('.navbar');
-  $(window).scroll(function() {
-    let scroll = $(window).scrollTop();
-    if (scroll > 0) {
-      navbar.addClass('show');
+  window.addEventListener('scroll', function() {
+    const scrollY = window.scrollY;
+    if (scrollY > 0) {
+      navBar.classList.add('show');
     } else {
-      navbar.removeClass('show');
-    }
-  });
-});
-
-//sp-g-nav
-$(function() {
-  var navTrg = $('.nav-trigger');
-  var nav = $('.sp-g-nav nav');
-  var app = $('#app');
-
-  var closeNav = function() {
-    navTrg.removeClass('active');
-    nav.removeClass('active');
-  }
-
-  var openNav = function() {
-    navTrg.addClass('active');
-    nav.addClass('active');
-  }
-
-  navTrg.click(function(){
-    if ( navTrg.hasClass('active') && nav.hasClass('active') ) {
-      closeNav();
-    } else {
-      openNav();
-    }
-    return false;
-  });
-
-  //グローバルナビ以外をクリックしたらナビを閉じる
-  app.click(function() {
-    if ( navTrg.hasClass('active') && nav.hasClass('active') ) {
-      closeNav();
-    }
-  });
-
-  //アンカーリンクをクリックしたらナビを閉じる
-  $('a[href^="#"]').click(function(){
-    if ( navTrg.hasClass('active') && nav.hasClass('active') ) {
-      closeNav();
+      navBar.classList.remove('show');
     }
   })
-
 });
 
-//anchor scroll
-$(function(){
-  $('a[href^="#"]').click(function(){
-    var speed = 500;
-    var href = $(this).attr("href");
-    var target = $(href == "#" || href == "" ? 'html' : href);
-    var position = target.offset().top;
-    $('body,html').animate({scrollTop:position}, speed, 'swing');
-    return false;
+// fade contents
+document.addEventListener('DOMContentLoaded', function() {
+  const fadeTarget = document.querySelectorAll(".js-fade");
+
+  const options = {
+    root: null,
+    rootMargin: "-50% 0px",
+    threshold: 0
+  };
+
+  const observer = new IntersectionObserver(isIntersect, options);
+
+  fadeTarget.forEach(function(target) {
+    observer.observe(target);
+  });
+
+  function isIntersect(entries) {
+    entries.forEach(function(entry) {
+      if(entry.isIntersecting) {
+        activateItem(entry.target);
+      }
+    })
+  }
+
+  function activateItem(element) {
+    element.classList.add('show');
+  }
+});
+
+// sp menu
+document.addEventListener('DOMContentLoaded', function() {
+  const navTrg = document.querySelector('.nav-trigger');
+  const nav = document.querySelector('.sp-g-nav nav');
+  const spAnkerLists = document.querySelectorAll('.sp-g-nav a[href^="#"]');
+
+  navTrg.addEventListener('click', function() {
+    if(!this.classList.contains('active')) {
+      this.classList.add('active');
+      nav.classList.add('active');
+    } else {
+      this.classList.remove('active');
+      nav.classList.remove('active');
+    }
+  });
+
+  spAnkerLists.forEach(function(link) {
+    link.addEventListener('click', function() {
+      navTrg.classList.remove('active');
+      nav.classList.remove('active');
+    })
+  });
+});
+
+// anchor scroll
+window.addEventListener('DOMContentLoaded', function() {
+  const pcAnchorLinks = document.querySelectorAll('.navbar a[href^="#"]');
+
+  pcAnchorLinks.forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetId = link.hash;
+      const targetElement = document.querySelector(targetId);
+      const targetOffsetTop = window.pageYOffset + targetElement.getBoundingClientRect().top;
+      window.scrollTo({
+        top: targetOffsetTop,
+        behavior: "smooth"
+      });
+    });
   });
 });
