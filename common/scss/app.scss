@@ -1,6 +1,6 @@
-@import "reset";
-@import "app.vars";
-@import "utility";
+@charset "UTF-8";
+
+@import "core/base";
 
 html,body {
   font-family: $basic-font-family;

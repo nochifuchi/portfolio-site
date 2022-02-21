@@ -1,0 +1,6 @@
+// SP
+@mixin sp() {
+  @media screen and (max-width: 768px){
+    @content;
+  }
+}
