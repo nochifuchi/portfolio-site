@@ -14,6 +14,10 @@
     font-size: 35px;
     text-align: center;
     margin-bottom: 60px;
+    @include sp {
+      font-size: 23px;
+      margin-bottom: 30px;
+    }
 
     &:after {
       display: block;
@@ -43,6 +47,10 @@
   transition: all 0.5s ease-in;
   height: 450px;
   background: linear-gradient( 135deg, rgba(108, 148, 211, 0.8), rgba(111, 210, 237, 0.5));
+  @include sp {
+    height: 250px;
+  }
+
   &.show {
     opacity: 1;
   }
@@ -58,13 +66,14 @@
     transition: all 0.5s ease-in;
     transform: translate(-50%, -50%);
     text-align: center;
-    &.show {
-      opacity: 1;
-    }
-
     @include sp {
+      font-size: 25px;
       text-align: center;
       margin-bottom: 40px;
+    }
+
+    &.show {
+      opacity: 1;
     }
   }
 }
@@ -284,16 +293,6 @@
   }
   h3::after {
     width: 30px;
-  }
-
-  /*----------------------------
-    main-visual
-  -----------------------------*/
-  #main-visual {
-    height: 250px;
-  }
-  h2 {
-    font-size: 25px;
   }
 
   /*----------------------------
