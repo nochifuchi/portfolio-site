@@ -37,7 +37,7 @@ h3 {
 /*----------------------------
   main-visual
 -----------------------------*/
-#main-visual {
+.main-visual {
   position: relative;
   opacity: 0;
   transition: all 0.5s ease-in;
@@ -46,21 +46,26 @@ h3 {
   &.show {
     opacity: 1;
   }
-}
 
-h2 {
-  font-size: 30px;
-  font-family: $FOT-Tsuku;
-  color: $white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  opacity: 0;
-  transition: all 0.5s ease-in;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  &.show {
-    opacity: 1;
+  &_title {
+    font-size: 30px;
+    font-family: $FOT-Tsuku;
+    color: $white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    &.show {
+      opacity: 1;
+    }
+
+    @include sp {
+      text-align: center;
+      margin-bottom: 40px;
+    }
   }
 }
 

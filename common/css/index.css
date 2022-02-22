@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 Copyright (c) 2009, Yahoo! Inc. All rights reserved.
 Code licensed under the BSD License:
@@ -84,6 +85,29 @@ legend {
   color: #000;
 }
 
+/* js-fade */
+.js-fade {
+  opacity: 0;
+  transform: translate(0, 70px);
+  -webkit-transform: translate(0, 70px);
+  transition: all 0.5s ease;
+}
+
+.js-fade.show {
+  opacity: 1.0;
+  transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+}
+
+/* 要素表示をずらす */
+.js-fade:nth-of-type(2), .js-fade:nth-of-type(5), .js-fade:nth-of-type(8), .js-fade:nth-of-type(11) {
+  transition-delay: 150ms;
+}
+
+.js-fade:nth-of-type(3), .js-fade:nth-of-type(6), .js-fade:nth-of-type(9), .js-fade:nth-of-type(12) {
+  transition-delay: 300ms;
+}
+
 .toGray {
   -webkit-filter: grayscale(0%);
           filter: grayscale(0%);
@@ -119,14 +143,6 @@ a.hover-line::after {
 }
 
 a.hover-line:hover::after {
-  transform: scale(1, 1);
-}
-
-.navbar.show a.hover-line::after {
-  background: #cccccc;
-}
-
-.navbar.show a.hover-line:hover::after {
   transform: scale(1, 1);
 }
 
@@ -166,7 +182,7 @@ h3.js-fade.show {
 /*----------------------------
   main-visual
 -----------------------------*/
-#main-visual {
+.main-visual {
   position: relative;
   opacity: 0;
   transition: all 0.5s ease-in;
@@ -174,11 +190,11 @@ h3.js-fade.show {
   background: linear-gradient(135deg, rgba(108, 148, 211, 0.8), rgba(111, 210, 237, 0.5));
 }
 
-#main-visual.show {
+.main-visual.show {
   opacity: 1;
 }
 
-h2 {
+.main-visual_title {
   font-size: 30px;
   font-family: fot-tsukuardgothic-std, sans-serif;
   color: #fff;
@@ -191,8 +207,15 @@ h2 {
   text-align: center;
 }
 
-h2.show {
+.main-visual_title.show {
   opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .main-visual_title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
 }
 
 /*----------------------------
