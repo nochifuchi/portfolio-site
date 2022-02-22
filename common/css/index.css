@@ -574,28 +574,54 @@ img.sp {
   background: #fff;
 }
 
-.about-me {
+.profile-block {
   display: flex;
   align-items: center;
 }
 
-.about-visual {
+@media screen and (max-width: 767px) {
+  .profile-block {
+    display: block;
+  }
+}
+
+.profile-block_visual {
   width: 40%;
 }
 
-.about-visual img {
+@media screen and (max-width: 767px) {
+  .profile-block_visual {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+
+.profile-block_visual img {
   width: 80%;
 }
 
-.about-detail {
+@media screen and (max-width: 767px) {
+  .profile-block_visual img {
+    width: 60%;
+  }
+}
+
+.profile-block_info {
   width: 60%;
 }
 
-.about-detail > li + li {
-  margin-top: 20px;
+@media screen and (max-width: 767px) {
+  .profile-block_info {
+    width: 100%;
+  }
 }
 
-.about-detail .title {
+.profile-detail:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.profile-detail_title {
   font-family: fot-tsukuardgothic-std, sans-serif;
   font-size: 20px;
 }
@@ -711,23 +737,6 @@ img.sp {
   }
   h3::after {
     width: 30px;
-  }
-  /*----------------------------
-    about
-  -----------------------------*/
-  .about-me {
-    display: block;
-  }
-  .about-visual {
-    width: 100%;
-    margin-bottom: 30px;
-    text-align: center;
-  }
-  .about-visual img {
-    width: 60%;
-  }
-  .about-detail {
-    width: 100%;
   }
   /*----------------------------
     skill

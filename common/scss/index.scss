@@ -171,27 +171,47 @@
 #about {
   background: $white;
 }
-.about-me {
+
+.profile-block {
   display: flex;
   align-items: center;
-}
-.about-visual {
-  width: 40%;
-  img {
-    width: 80%;
+  @include sp {
+    display: block;
+  }
+
+  &_visual {
+    width: 40%;
+    @include sp {
+      width: 100%;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    img {
+      width: 80%;
+      @include sp {
+        width: 60%;
+      }
+    }
+  }
+
+  &_info {
+    width: 60%;
+    @include sp {
+      width: 100%;
+    }
   }
 }
-.about-detail {
-  width: 60%;
-}
-.about-detail > li {
-  & + li {
-    margin-top: 20px;
+
+.profile-detail {
+  &:not(:last-child) {
+    margin-bottom: 20px;
   }
-}
-.about-detail .title {
-  font-family: $FOT-Tsuku;
-  font-size: 20px;
+
+  &_title {
+    font-family: $FOT-Tsuku;
+    font-size: 20px;
+  }
 }
 
 /*----------------------------
@@ -293,24 +313,6 @@
   }
   h3::after {
     width: 30px;
-  }
-
-  /*----------------------------
-    about
-  -----------------------------*/
-  .about-me {
-    display: block;
-  }
-  .about-visual {
-    width: 100%;
-    margin-bottom: 30px;
-    text-align: center;
-    img {
-      width: 60%;
-    }
-  }
-  .about-detail {
-    width: 100%;
   }
 
   /*----------------------------
