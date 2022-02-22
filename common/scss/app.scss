@@ -34,7 +34,7 @@ p + p {
 
 /* content-block */
 .container {
-  width: $content-width;
+  max-width: $content-width;
   margin: 0 auto;
   @include sp {
     width: $sp-content-width;
