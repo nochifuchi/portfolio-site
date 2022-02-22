@@ -146,6 +146,245 @@ a.hover-line:hover::after {
   transform: scale(1, 1);
 }
 
+html, body {
+  font-family: "Noto Sans Japanese", "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", MS PGothic, sans-serif;
+  font-size: 13px;
+  color: #666;
+  font-weight: normal;
+  line-break: strict;
+  word-break: break-strict;
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+  line-height: 1.75;
+}
+
+#app {
+  background: #fafafa;
+}
+
+a {
+  color: #666;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:hover {
+  color: #8c8c8c;
+  text-decoration: none;
+}
+
+p + p {
+  margin-top: 10px;
+}
+
+/* content-block */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 92%;
+  }
+}
+
+.inner {
+  padding: 0 5%;
+}
+
+.img-responsive {
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  img.pc {
+    display: none;
+  }
+}
+
+img.sp {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  img.sp {
+    display: block;
+  }
+}
+
+/*----------------------------
+  header
+-----------------------------*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  transition: all 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    display: none;
+  }
+}
+
+.header.show {
+  background: white;
+  box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.1);
+}
+
+.header.show .site-title,
+.header.show .g-nav_item a {
+  color: #999999;
+}
+
+.header.show .hover-line::after {
+  background: #cccccc;
+}
+
+.header.show .hover-line:hover::after {
+  transform: scale(1, 1);
+}
+
+.header .container {
+  padding: 10px 0;
+}
+
+.header .g-nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header .g-nav_item {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.header .g-nav_item a {
+  font-size: 15px;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+
+/*----------------------------
+  sp-menu
+-----------------------------*/
+.sp-menu {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .sp-menu {
+    display: block;
+  }
+}
+
+.sp-menu .menu-btn {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 10;
+}
+
+.sp-menu .menu-btn_trigger {
+  position: relative;
+  width: 30px;
+  height: 22px;
+}
+
+.sp-menu .menu-btn_bar {
+  display: inline-block;
+  transition: all 0.4s;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #b3b3b3;
+  border-radius: 4px;
+}
+
+.sp-menu .menu-btn_bar:nth-of-type(1) {
+  top: 0;
+}
+
+.sp-menu .menu-btn_bar:nth-of-type(2) {
+  top: 10px;
+}
+
+.sp-menu .menu-btn_bar:nth-of-type(3) {
+  bottom: 0;
+}
+
+.sp-menu .menu-btn_trigger.active .menu-btn_bar:nth-of-type(1) {
+  transform: translateY(10px) rotate(-45deg);
+}
+
+.sp-menu .menu-btn_trigger.active .menu-btn_bar:nth-of-type(2) {
+  opacity: 0;
+}
+
+.sp-menu .menu-btn_trigger.active .menu-btn_bar:nth-of-type(3) {
+  transform: translateY(-10px) rotate(45deg);
+}
+
+.sp-menu .sp-nav {
+  width: 60%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: -60%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+  transition: all 0.2s ease-out;
+}
+
+.sp-menu .sp-nav.active {
+  right: 0;
+}
+
+.sp-menu .sp-nav_lists {
+  margin-top: 90px;
+}
+
+.sp-menu .sp-nav_item {
+  text-align: center;
+  border-top: 1px solid #ccc;
+}
+
+.sp-menu .sp-nav_item:last-child {
+  border-bottom: 1px solid #ccc;
+}
+
+.sp-menu .sp-nav_item a {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  color: #ccc;
+  font-size: 18px;
+  font-family: viato, sans-serif;
+}
+
+/*----------------------------
+  footer
+-----------------------------*/
+.footer {
+  padding: 15px;
+  background: linear-gradient(135deg, rgba(108, 148, 211, 0.8), rgba(111, 210, 237, 0.5));
+  text-align: center;
+}
+
+.footer_copyright {
+  font-size: 14px;
+  color: #fff;
+}
+
 /* section common */
 .section {
   padding: 30px;
