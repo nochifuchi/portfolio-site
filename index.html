@@ -5,446 +5,423 @@
 <meta name="description" content="ノザワフミタカのポートフォリオサイト">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>FUMITAKA NOZAWA portfolio | ノザワフミタカのポートフォリオサイト</title>
-<link rel="stylesheet" href="https://use.typekit.net/ghl5nid.css">
 <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="common/css/app.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="common/css/index.css">
 <link rel="icon" type="image/vnd.microsoft.icon" href="common/img/favicon.ico">
-<script>
-  (function(d) {
-    var config = {
-      kitId: 'dje8mib',
-      scriptTimeout: 3000,
-      async: true
-    },
-    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-  })(document);
-</script>
 </head>
 <body>
+
 <div id="app">
 
-  <!-- g-header -->
-  <header id="g-header">
-    <!-- sp-g-nav -->
-    <div class="sp-g-nav">
-      <div class="nav-menu">
-        <div class="nav-trigger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-      <nav>
-        <ul>
-          <li><a class="no-underline" href="#main-visual">home</a></li>
-          <li><a class="no-underline" href="#works">Works</a></li>
-          <li><a class="no-underline" href="#about">About</a></li>
-          <li><a class="no-underline" href="#contact">Contact</a></li>
+  <!-- header -->
+  <header class="header">
+    <div class="container">
+      <nav class="g-nav">
+        <ul class="g-nav_lists">
+          <li class="g-nav_item"><a class="hover-line" href="#main-visual">Home</a></li>
+          <li class="g-nav_item"><a class="hover-line" href="#works">Works</a></li>
+          <li class="g-nav_item"><a class="hover-line" href="#about">About</a></li>
+          <li class="g-nav_item"><a class="hover-line" href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
-    <!-- navbar -->
-    <div class="navbar fixed-top">
-      <div class="container">
-        <h1>Portfolio</h1>
-        <nav class="g-nav">
-          <ul>
-            <li><a class="no-underline hover-line" href="#main-visual">Home</a></li>
-            <li><a class="no-underline hover-line" href="#works">Works</a></li>
-            <li><a class="no-underline hover-line" href="#about">About</a></li>
-            <li><a class="no-underline hover-line" href="#contact">Contact</a></li>
-          </ul>
-        </nav>
+  </header>
+  <!-- /header -->
+
+  <!-- sp-menu -->
+  <div class="sp-menu">
+    <div class="menu-btn">
+      <div class="menu-btn_trigger">
+        <span class="menu-btn_bar"></span>
+        <span class="menu-btn_bar"></span>
+        <span class="menu-btn_bar"></span>
       </div>
     </div>
-  </header>
-  <!-- /g-header -->
+    <nav class="sp-nav">
+      <ul class="sp-nav_lists">
+        <li class="sp-nav_item"><a href="#main-visual">home</a></li>
+        <li class="sp-nav_item"><a href="#works">Works</a></li>
+        <li class="sp-nav_item"><a href="#about">About</a></li>
+        <li class="sp-nav_item"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <!-- sp-menu -->
 
   <!-- main-visual -->
-  <div id="main-visual">
-    <h2>Fumitaka's Portofolio</h2>
+  <div class="main-visual">
+    <h1 class="main-visual_title">Fumitaka's Portofolio</h1>
   </div>
   <!-- /main-visual -->
 
   <!-- contents -->
   <div id="contents">
-    <div class="wrap">
 
-      <!-- works -->
-      <section id="works" class="section">
-        <div class="container">
-          <h3 class="js-fade">works</h3>
-          <ul class="work-lists">
-            <li class="js-fade">
-              <div class="site">e-JINZAI for business（企業向け研修サービス）<br></div>
-              <div class="visual">
-                <a href="https://business.ejinzai.jp/" target="_blank" class="toGray">
+    <!-- works -->
+    <section id="works" class="section">
+      <div class="container">
+        <h2 class="section_title js-target js-top-bottom">works</h2>
+        <div class="work-lists">
+          <dl class="work-lists_block js-target js-bottom-top">
+            <dt class="work-lists_title">e-JINZAI for business（企業向け研修サービス）</dt>
+            <dd class="work-lists_info">
+              <div class="work-lists_visual">
+                <a href="https://business.ejinzai.jp/" target="_blank" class="img-grey">
                   <img src="common/img/work_19.jpg" alt="e-JINZAI for business（企業向け研修サービス）" class="img-responsive">
                 </a>
               </div>
-              <div class="work-info">
-                <div class="url">
-                  <div class="title"><span>URL</span></div>
-                  <a href="https://business.ejinzai.jp/" target="_blank">https://business.ejinzai.jp/</a>
-                </div>
-                <div class="tool">
-                  <div class="title"><span>使用ツール</span></div>
-                  HTML・CSS(SCSS) / PHP / JavaScript<br>VS code / Adobe XD / Photoshop / Git
-                </div>
-                <div class="point">
-                  <div class="title"><span>詳細</span></div>
-                  新規コンテンツの制作・追加やリニューアル、更新作業などを行いました。
-                </div>
+              <div class="work-detail">
+                <ul class="work-detail_lists">
+                  <li class="work-detail_item work-detail_item--url">
+                    <div class="work-detail_title"><span>URL</span></div>
+                    <div class="work-detail_info"><a href="https://business.ejinzai.jp/" target="_blank">https://business.ejinzai.jp/</a></div>
+                  </li>
+                  <li class="work-detail_item work-detail_item--tool">
+                    <div class="work-detail_title"><span>使用ツール</span></div>
+                    <div class="work-detail_info">HTML・CSS(SCSS) / PHP / JavaScript<br>VS code / Adobe XD / Photoshop / Git</div>
+                  </li>
+                  <li class="work-detail_item work-detail_item--point">
+                    <div class="work-detail_title"><span>担当</span></div>
+                    <div class="work-detail_info">新規コンテンツの制作・追加やリニューアル、更新作業など</div>
+                  </li>
+                </ul>
               </div>
-            </li>
-            <li class="js-fade">
-              <div class="site">e-JINZAI for finance（金融向け研修サービス）<br></div>
-              <div class="visual">
-                <a href="https://www.mw-ejinzai.com/" target="_blank" class="toGray">
-                  <img src="common/img/work_18.jpg" alt="e-JINZAI for finance（金融機関向け研修サービス）" class="img-responsive">
+            </dd>
+          </dl>
+          <dl class="work-lists_block js-target js-bottom-top">
+            <dt class="work-lists_title">e-JINZAI for finance（金融向け研修サービス）</dt>
+            <dd class="work-lists_info">
+              <div class="work-lists_visual">
+                <a href="https://www.mw-ejinzai.com/" target="_blank" class="img-grey">
+                  <img src="common/img/work_18.jpg" alt="e-JINZAI for finance（金融向け研修サービス）" class="img-responsive">
                 </a>
               </div>
-              <div class="work-info">
-                <div class="url">
-                  <div class="title"><span>URL</span></div>
-                  <a href="https://www.mw-ejinzai.com/" target="_blank">https://www.mw-ejinzai.com/</a>
-                </div>
-                <div class="tool">
-                  <div class="title"><span>使用ツール</span></div>
-                  HTML・CSS(SCSS) / PHP / JavaScript<br>VS code / Adobe XD / Photoshop / Git
-                </div>
-                <div class="point">
-                  <div class="title"><span>詳細</span></div>
-                  新規コンテンツの制作・追加やリニューアル、更新作業などを行いました。
-                </div>
+              <div class="work-detail">
+                <ul class="work-detail_lists">
+                  <li class="work-detail_item work-detail_item--url">
+                    <div class="work-detail_title"><span>URL</span></div>
+                    <div class="work-detail_info"><a href="https://www.mw-ejinzai.com/" target="_blank">https://www.mw-ejinzai.com/</a></div>
+                  </li>
+                  <li class="work-detail_item work-detail_item--tool">
+                    <div class="work-detail_title"><span>使用ツール</span></div>
+                    <div class="work-detail_info">HTML・CSS(SCSS) / PHP / JavaScript<br>VS code / Adobe XD / Photoshop / Git</div>
+                  </li>
+                  <li class="work-detail_item work-detail_item--point">
+                    <div class="work-detail_title"><span>担当</span></div>
+                    <div class="work-detail_info">新規コンテンツの制作・追加やリニューアル、更新作業など</div>
+                  </li>
+                </ul>
               </div>
-            </li>
-            <li class="js-fade">
-              <div class="site">e-JINZAI for medical（医療向け研修サービス）<br></div>
-              <div class="visual">
-                <a href="https://www.ejinzai.jp/medical_welfare/" target="_blank" class="toGray">
+            </dd>
+          </dl>
+          <dl class="work-lists_block js-target js-bottom-top">
+            <dt class="work-lists_title">e-JINZAI for medical（医療向け研修サービス）</dt>
+            <dd class="work-lists_info">
+              <div class="work-lists_visual">
+                <a href="https://www.ejinzai.jp/medical_welfare/" target="_blank" class="img-grey">
                   <img src="common/img/work_17.jpg" alt="e-JINZAI for medical（医療向け研修サービス）" class="img-responsive">
                 </a>
               </div>
-              <div class="work-info">
-                <div class="url">
-                  <div class="title"><span>URL</span></div>
-                  <a href="https://www.ejinzai.jp/medical_welfare/" target="_blank">https://www.ejinzai.jp/medical_welfare/</a>
-                </div>
-                <div class="tool">
-                  <div class="title"><span>使用ツール</span></div>
-                  HTML・CSS(SCSS) / PHP / JavaScript<br>VS code / Adobe XD / Photoshop / Git
-                </div>
-                <div class="point">
-                  <div class="title"><span>詳細</span></div>
-                  サイトの全面リニューアルを担当しました。
-                </div>
+              <div class="work-detail">
+                <ul class="work-detail_lists">
+                  <li class="work-detail_item work-detail_item--url">
+                    <div class="work-detail_title"><span>URL</span></div>
+                    <div class="work-detail_info"><a href="https://www.ejinzai.jp/medical_welfare/" target="_blank">https://www.ejinzai.jp/medical_welfare/</a></div>
+                  </li>
+                  <li class="work-detail_item work-detail_item--tool">
+                    <div class="work-detail_title"><span>使用ツール</span></div>
+                    <div class="work-detail_info">HTML・CSS(SCSS) / PHP / JavaScript<br>VS code / Adobe XD / Photoshop / Git</div>
+                  </li>
+                  <li class="work-detail_item work-detail_item--point">
+                    <div class="work-detail_title"><span>担当</span></div>
+                    <div class="work-detail_info">サイトの全面リニューアル</div>
+                  </li>
+                </ul>
               </div>
-            </li>
-            <li class="js-fade">
-              <div class="site">講師派遣サービス<br></div>
-              <div class="visual">
-                <a href="https://www.bmc-net.jp/haken/" target="_blank" class="toGray">
+            </dd>
+          </dl>
+          <dl class="work-lists_block js-target js-bottom-top">
+            <dt class="work-lists_title">講師派遣サービス</dt>
+            <dd class="work-lists_info">
+              <div class="work-lists_visual">
+                <a href="https://www.bmc-net.jp/haken/" target="_blank" class="img-grey">
                   <img src="common/img/work_16.jpg" alt="講師派遣サービス" class="img-responsive">
                 </a>
               </div>
-              <div class="work-info">
-                <div class="url">
-                  <div class="title"><span>URL</span></div>
-                  <a href="https://www.bmc-net.jp/haken/" target="_blank">https://www.bmc-net.jp/haken/</a>
-                </div>
-                <div class="tool">
-                  <div class="title"><span>使用ツール</span></div>
-                  HTML・CSS(SCSS) / Vue.js / Nuxt.js<br>VS code / Adobe XD / Git
-                </div>
-                <div class="point">
-                  <div class="title"><span>詳細</span></div>
-                  サーバーサイドエンジニアと連携したNuxt.jsを使用したフロントエンド開発
-                </div>
+              <div class="work-detail">
+                <ul class="work-detail_lists">
+                  <li class="work-detail_item work-detail_item--url">
+                    <div class="work-detail_title"><span>URL</span></div>
+                    <div class="work-detail_info"><a href="https://www.bmc-net.jp/haken/" target="_blank">https://www.bmc-net.jp/haken/</a></div>
+                  </li>
+                  <li class="work-detail_item work-detail_item--tool">
+                    <div class="work-detail_title"><span>使用ツール</span></div>
+                    <div class="work-detail_info">HTML・CSS(SCSS) / Vue.js / Nuxt.js<br>VS code / Adobe XD / Git</div>
+                  </li>
+                  <li class="work-detail_item work-detail_item--point">
+                    <div class="work-detail_title"><span>担当</span></div>
+                    <div class="work-detail_info">サーバーサイドエンジニアと連携したNuxt.jsを使用したフロントエンド開発</div>
+                  </li>
+                </ul>
               </div>
-            </li>
-            <li class="js-fade">
-              <div class="site">コンサルタント養成講座（一例）<br></div>
-              <div class="visual">
-                <a href="https://www.bmc-net.jp/instructional_designer/" target="_blank" class="toGray">
-                  <img src="common/img/work_15.jpg" alt="講師派遣サービス" class="img-responsive">
+            </dd>
+          </dl>
+          <dl class="work-lists_block js-target js-bottom-top">
+            <dt class="work-lists_title">コンサルタント養成講座（一例）</dt>
+            <dd class="work-lists_info">
+              <div class="work-lists_visual">
+                <a href="https://www.bmc-net.jp/instructional_designer/" target="_blank" class="img-grey">
+                  <img src="common/img/work_15.jpg" alt="コンサルタント養成講座（一例）" class="img-responsive">
                 </a>
               </div>
-              <div class="work-info">
-                <div class="url">
-                  <div class="title"><span>URL</span></div>
-                  <a href="https://www.bmc-net.jp/instructional_designer/" target="_blank">https://www.bmc-net.jp/instructional_designer/</a>
-                </div>
-                <div class="tool">
-                  <div class="title"><span>使用ツール</span></div>
-                  HTML・CSS(SCSS)<br>VS code / Photoshop / Indesign / Git
-                </div>
-                <div class="point">
-                  <div class="title"><span>詳細</span></div>
-                  LP制作、バナー作成、紙媒体（パンフレット）のデザインからWEB用のデザイン作成
-                </div>
+              <div class="work-detail">
+                <ul class="work-detail_lists">
+                  <li class="work-detail_item work-detail_item--url">
+                    <div class="work-detail_title"><span>URL</span></div>
+                    <div class="work-detail_info"><a href="https://www.bmc-net.jp/instructional_designer/" target="_blank">https://www.bmc-net.jp/instructional_designer/</a></div>
+                  </li>
+                  <li class="work-detail_item work-detail_item--tool">
+                    <div class="work-detail_title"><span>使用ツール</span></div>
+                    <div class="work-detail_info">HTML・CSS(SCSS)<br>VS code / Photoshop / Indesign / Git</div>
+                  </li>
+                  <li class="work-detail_item work-detail_item--point">
+                    <div class="work-detail_title"><span>担当</span></div>
+                    <div class="work-detail_info">LP制作、バナー作成、紙媒体（パンフレット）のデザインからWEB用のデザイン作成</div>
+                  </li>
+                </ul>
               </div>
-            </li>
-            <li class="js-fade">
-              <div class="site">セイコーウオッチ 公式WEBサイト</div>
-              <div class="visual">
-                <a href="https://www.seikowatches.com" target="_blank" class="toGray">
-                  <img src="common/img/work_14.jpg" alt="グランドセイコー公式サイト" class="img-responsive">
+            </dd>
+          </dl>
+          <dl class="work-lists_block js-target js-bottom-top">
+            <dt class="work-lists_title">セイコーウオッチ 公式WEBサイト</dt>
+            <dd class="work-lists_info">
+              <div class="work-lists_visual">
+                <a href="https://www.seikowatches.com" target="_blank" class="img-grey">
+                  <img src="common/img/work_14.jpg" alt="セイコーウオッチ 公式WEBサイト" class="img-responsive">
                 </a>
               </div>
-              <div class="work-info">
-                <div class="url">
-                  <div class="title"><span>URL</span></div>
-                  <a href="https://www.seikowatches.com" target="_blank">https://www.seikowatches.com</a>
-                </div>
-                <div class="tool">
-                  <div class="title"><span>使用ツール</span></div>
-                  HTML・CSS(SCSS) / JavaScript / Angular<br>VS code / Sketch / Git
-                </div>
-                <div class="point">
-                  <div class="title"><span>詳細</span></div>
-                  新規ページの追加や修正などの更新作業を行いました。
-                </div>
+              <div class="work-detail">
+                <ul class="work-detail_lists">
+                  <li class="work-detail_item work-detail_item--url">
+                    <div class="work-detail_title"><span>URL</span></div>
+                    <div class="work-detail_info"><a href="https://www.seikowatches.com" target="_blank">https://www.seikowatches.com</a></div>
+                  </li>
+                  <li class="work-detail_item work-detail_item--tool">
+                    <div class="work-detail_title"><span>使用ツール</span></div>
+                    <div class="work-detail_info">HTML・CSS(SCSS) / JavaScript / Angular<br>VS code / Sketch / Git</div>
+                  </li>
+                  <li class="work-detail_item work-detail_item--point">
+                    <div class="work-detail_title"><span>担当</span></div>
+                    <div class="work-detail_info">新規ページの追加や修正などの更新作業など</div>
+                  </li>
+                </ul>
               </div>
-            </li>
-            <li class="js-fade">
-              <div class="site">グランドセイコー公式サイト</div>
-              <div class="visual">
-                <a href="https://www.grand-seiko.com" target="_blank" class="toGray">
+            </dd>
+          </dl>
+          <dl class="work-lists_block js-target js-bottom-top">
+            <dt class="work-lists_title">グランドセイコー公式サイト</dt>
+            <dd class="work-lists_info">
+              <div class="work-lists_visual">
+                <a href="https://www.grand-seiko.com" target="_blank" class="img-grey">
                   <img src="common/img/work_13.jpg" alt="グランドセイコー公式サイト" class="img-responsive">
                 </a>
               </div>
-              <div class="work-info">
-                <div class="url">
-                  <div class="title"><span>URL</span></div>
-                  <a href="https://www.grand-seiko.com" target="_blank">https://www.grand-seiko.com</a>
-                </div>
-                <div class="tool">
-                  <div class="title"><span>使用ツール</span></div>
-                  HTML・CSS(SCSS) / JavaScript / Angular<br>VS code / Sketch / Git
-                </div>
-                <div class="point">
-                  <div class="title"><span>詳細</span></div>
-                  ページ修正や改修を行いました。
-                </div>
+              <div class="work-detail">
+                <ul class="work-detail_lists">
+                  <li class="work-detail_item work-detail_item--url">
+                    <div class="work-detail_title"><span>URL</span></div>
+                    <div class="work-detail_info"><a href="https://www.grand-seiko.com" target="_blank">https://www.grand-seiko.com</a></div>
+                  </li>
+                  <li class="work-detail_item work-detail_item--tool">
+                    <div class="work-detail_title"><span>使用ツール</span></div>
+                    <div class="work-detail_info">HTML・CSS(SCSS) / JavaScript / Angular<br>VS code / Sketch / Git</div>
+                  </li>
+                  <li class="work-detail_item work-detail_item--point">
+                    <div class="work-detail_title"><span>担当</span></div>
+                    <div class="work-detail_info">ページ修正や改修などの更新作業</div>
+                  </li>
+                </ul>
               </div>
-            </li>
-            <li class="js-fade">
-              <div class="site">Nintendo トピックス</div>
-              <div class="visual">
-                <a href="https://topics.nintendo.co.jp" target="_blank" class="toGray">
+            </dd>
+          </dl>
+          <dl class="work-lists_block js-target js-bottom-top">
+            <dt class="work-lists_title">Nintendo トピックス</dt>
+            <dd class="work-lists_info">
+              <div class="work-lists_visual">
+                <a href="https://topics.nintendo.co.jp" target="_blank" class="img-grey">
                   <img src="common/img/work_12.jpg" alt="Nintendo トピックス" class="img-responsive">
                 </a>
               </div>
-              <div class="work-info">
-                <div class="url">
-                  <div class="title"><span>URL</span></div>
-                  <a href="https://topics.nintendo.co.jp" target="_blank">https://topics.nintendo.co.jp</a>
-                </div>
-                <div class="tool">
-                  <div class="title"><span>使用ツール</span></div>
-                  HTML・CSS(SCSS) / JavaScript / Angular<br>VS code / Sketch / Git
-                </div>
-                <div class="point">
-                  <div class="title"><span>詳細</span></div>
-                  ページ修正や改修を行いました。
-                </div>
+              <div class="work-detail">
+                <ul class="work-detail_lists">
+                  <li class="work-detail_item work-detail_item--url">
+                    <div class="work-detail_title"><span>URL</span></div>
+                    <div class="work-detail_info"><a href="https://topics.nintendo.co.jp" target="_blank">https://topics.nintendo.co.jp</a></div>
+                  </li>
+                  <li class="work-detail_item work-detail_item--tool">
+                    <div class="work-detail_title"><span>使用ツール</span></div>
+                    <div class="work-detail_info">HTML・CSS(SCSS) / JavaScript / Angular<br>VS code / Sketch / Git</div>
+                  </li>
+                  <li class="work-detail_item work-detail_item--point">
+                    <div class="work-detail_title"><span>担当</span></div>
+                    <div class="work-detail_info">ページ修正や改修などの更新作業</div>
+                  </li>
+                </ul>
               </div>
-            </li>
-            <li class="js-fade">
-              <div class="site">ELEGANCE 2020 SPRING（現在は公開終了）</div>
-              <div class="visual">
-                <img src="common/img/work_11.jpg" alt="ELEGANCE 2020 SPRING" class="img-responsive">
+            </dd>
+          </dl>
+          <dl class="work-lists_block js-target js-bottom-top">
+            <dt class="work-lists_title">ELEGANCE 2020 SPRING（現在は公開終了）</dt>
+            <dd class="work-lists_info">
+              <div class="work-lists_visual">
+                <img src="common/img/work_11.jpg" alt="ELEGANCE 2020 SPRING（現在は公開終了）" class="img-responsive">
               </div>
-              <div class="work-info">
-                <div class="tool">
-                  <div class="title"><span>使用ツール</span></div>
-                  HTML・CSS(SCSS) / EJS / JavaScript<br>VS code / Photoshop / Git
-                </div>
-                <div class="point">
-                  <div class="title"><span>詳細</span></div>
-                  春コレクションのLP制作を行いました。（１人で制作）
-                </div>
+              <div class="work-detail">
+                <ul class="work-detail_lists">
+                  <li class="work-detail_item work-detail_item--tool">
+                    <div class="work-detail_title"><span>使用ツール</span></div>
+                    <div class="work-detail_info">HTML・CSS(SCSS) / EJS / JavaScript<br>VS code / Photoshop / Git</div>
+                  </li>
+                  <li class="work-detail_item work-detail_item--point">
+                    <div class="work-detail_title"><span>担当</span></div>
+                    <div class="work-detail_info">LP制作</div>
+                  </li>
+                </ul>
               </div>
-            </li>
-            <li class="js-fade">
-              <div class="site">ラインアート シャルマン</div>
-              <div class="visual">
-                <a href="https://www.lineart-charmant.com/jp-ja" target="_blank" class="toGray">
+            </dd>
+          </dl>
+          <dl class="work-lists_block js-target js-bottom-top">
+            <dt class="work-lists_title">ラインアート シャルマン</dt>
+            <dd class="work-lists_info">
+              <div class="work-lists_visual">
+                <a href="https://www.lineart-charmant.com/jp-ja" target="_blank" class="img-grey">
                   <img src="common/img/work_10.jpg" alt="ラインアート シャルマン" class="img-responsive">
                 </a>
               </div>
-              <div class="work-info">
-                <div class="url">
-                  <div class="title"><span>URL</span></div>
-                  <a href="https://www.lineart-charmant.com/jp-ja" target="_blank">https://www.lineart-charmant.com/jp-ja</a>
-                </div>
-                <div class="tool">
-                  <div class="title"><span>使用ツール</span></div>
-                  HTML・CSS(SCSS) / JavaScript / Angular<br>VS code / Sketch / Git
-                </div>
-                <div class="point">
-                  <div class="title"><span>詳細</span></div>
-                  新規ページ追加（取扱店舗ページ）やページ改修を行いました。
-                </div>
+              <div class="work-detail">
+                <ul class="work-detail_lists">
+                  <li class="work-detail_item work-detail_item--url">
+                    <div class="work-detail_title"><span>URL</span></div>
+                    <div class="work-detail_info"><a href="https://www.lineart-charmant.com/jp-ja" target="_blank">https://www.lineart-charmant.com/jp-ja</a></div>
+                  </li>
+                  <li class="work-detail_item work-detail_item--tool">
+                    <div class="work-detail_title"><span>使用ツール</span></div>
+                    <div class="work-detail_info">HTML・CSS(SCSS) / JavaScript / Angular<br>VS code / Sketch / Git</div>
+                  </li>
+                  <li class="work-detail_item work-detail_item--point">
+                    <div class="work-detail_title"><span>担当</span></div>
+                    <div class="work-detail_info">新規ページ追加やページ改修などの更新作業</div>
+                  </li>
+                </ul>
               </div>
-            </li>
-            <li class="js-fade">
-              <div class="site">StudyLog - 学習記録サイト</div>
-              <div class="visual">
-                <a href="https://flask-studylog.herokuapp.com" target="_blank" class="toGray">
-                  <img src="common/img/work_9.jpg" alt="StudyLog 学習記録サイト" class="img-responsive">
+            </dd>
+          </dl>
+          <dl class="work-lists_block js-target js-bottom-top">
+            <dt class="work-lists_title">StudyLog - 学習記録サイト（独学）</dt>
+            <dd class="work-lists_info">
+              <div class="work-lists_visual">
+                <a href="https://flask-studylog.herokuapp.com" target="_blank" class="img-grey">
+                  <img src="common/img/work_9.jpg" alt="StudyLog - 学習記録サイト" class="img-responsive">
                 </a>
               </div>
-              <div class="work-info">
-                <div class="url">
-                  <div class="title"><span>URL</span></div>
-                  <a href="https://flask-studylog.herokuapp.com" target="_blank">https://flask-studylog.herokuapp.com</a>
-                </div>
-                <div class="tool">
-                  <div class="title"><span>使用ツール</span></div>
-                  Flask / Python / HTML・CSS(SASS) / MySQL<br>Heroku
-                </div>
-                <div class="point">
-                  <div class="title"><span>詳細</span></div>
-                  Flaskを使い日々の学習を記録できるサービスを作りました。主な機能に関してはGithubをご覧ください。
-                  <p><a class="link-text" href="https://github.com/nochifuchi/flask-studylog" target="_blank">Github</a></p>
-                </div>
+              <div class="work-detail">
+                <ul class="work-detail_lists">
+                  <li class="work-detail_item work-detail_item--url">
+                    <div class="work-detail_title"><span>URL</span></div>
+                    <div class="work-detail_info"><a href="https://flask-studylog.herokuapp.com" target="_blank">https://flask-studylog.herokuapp.com</a></div>
+                  </li>
+                  <li class="work-detail_item work-detail_item--tool">
+                    <div class="work-detail_title"><span>使用ツール</span></div>
+                    <div class="work-detail_info">Flask / Python / HTML・CSS(SASS) / MySQL<br>Heroku</div>
+                  </li>
+                  <li class="work-detail_item work-detail_item--point">
+                    <div class="work-detail_title"><span>担当</span></div>
+                    <div class="work-detail_info">Flaskを使い日々の学習を記録できるサービス。主な機能に関してはGithubをご覧ください。</div>
+                  </li>
+                </ul>
               </div>
-            </li>
-            <li class="js-fade">
-              <div class="site">PugPic - パグ好きのための写真投稿サイト</div>
-              <div class="visual">
-                <a href="https://pugpic-django.herokuapp.com" target="_blank" class="toGray">
-                  <img src="common/img/work_8.jpg" alt="パグ好きのための写真投稿サイト" class="img-responsive">
+            </dd>
+          </dl>
+          <dl class="work-lists_block js-target js-bottom-top">
+            <dt class="work-lists_title">PugPic - パグ好きのための写真投稿サイト（独学）</dt>
+            <dd class="work-lists_info">
+              <div class="work-lists_visual">
+                <a href="https://pugpic-django.herokuapp.com" target="_blank" class="img-grey">
+                  <img src="common/img/work_8.jpg" alt="PugPic - パグ好きのための写真投稿サイト" class="img-responsive">
                 </a>
               </div>
-              <div class="work-info">
-                <div class="url">
-                  <div class="title"><span>URL</span></div>
-                  <a href="https://pugpic-django.herokuapp.com" target="_blank">https://pugpic-django.herokuapp.com</a>
-                </div>
-                <div class="tool">
-                  <div class="title"><span>使用ツール</span></div>
-                  Django / Python / HTML・CSS(SASS) / jQuey<br>SQlite / Heroku / Cloudinary
-                </div>
-                <div class="point">
-                  <div class="title"><span>詳細</span></div>
-                  Djangoを使い、写真投稿サイトを作りました。主な機能に関してはGithubをご覧ください。
-                  <p><a class="link-text" href="https://github.com/nochifuchi/pugpic-django" target="_blank">Github</a></p>
-                </div>
+              <div class="work-detail">
+                <ul class="work-detail_lists">
+                  <li class="work-detail_item work-detail_item--url">
+                    <div class="work-detail_title"><span>URL</span></div>
+                    <div class="work-detail_info"><a href="https://pugpic-django.herokuapp.com" target="_blank">https://pugpic-django.herokuapp.com</a></div>
+                  </li>
+                  <li class="work-detail_item work-detail_item--tool">
+                    <div class="work-detail_title"><span>使用ツール</span></div>
+                    <div class="work-detail_info">Django / Python / HTML・CSS(SASS) / jQuey<br>SQlite / Heroku / Cloudinary</div>
+                  </li>
+                  <li class="work-detail_item work-detail_item--point">
+                    <div class="work-detail_title"><span>担当</span></div>
+                    <div class="work-detail_info">Djangoを使用した写真投稿サイト。主な機能に関してはGithubをご覧ください。</div>
+                  </li>
+                </ul>
               </div>
-            </li>
-            <li class="js-fade">
-              <div class="site">NATURAL LABORATORY</div>
-              <div class="visual">
-                <a href="https://www.aiki-natulabo.com/" target="_blank" class="toGray">
-                  <img src="common/img/work_4.jpg" alt="NATURAL LABORATORY" class="img-responsive">
-                </a>
-              </div>
-              <div class="work-info">
-                <div class="url">
-                  <div class="title"><span>URL</span></div>
-                  <a href="https://www.aiki-natulabo.com" target="_blank">https://www.aiki-natulabo.com</a>
-                </div>
-                <div class="tool">
-                  <div class="title"><span>使用ツール</span></div>
-                  Wix / Sublime Text 2 / HTML・CSS
-                </div>
-                <div class="point">
-                  <div class="title"><span>詳細</span></div>
-                  土地の良さ、新鮮な野菜が伝わるような写真を撮影し、トップイメージにしてみました。また、サイトカラーや文字色を会社のロゴの色に合わせてデザインしました。
-                </div>
-              </div>
-            </li>
-            <li class="js-fade">
-              <div class="site">ONWARD CROSSET</div>
-              <div class="visual">
-                <a href="https://crosset.onward.co.jp" target="_blank" class="toGray">
+            </dd>
+          </dl>
+          <dl class="work-lists_block js-target js-bottom-top">
+            <dt class="work-lists_title">ONWARD CROSSET</dt>
+            <dd class="work-lists_info">
+              <div class="work-lists_visual">
+                <a href="https://crosset.onward.co.jp" target="_blank" class="img-grey">
                   <img src="common/img/work_3.jpg" alt="ONWARD CROSSET" class="img-responsive">
                 </a>
               </div>
-              <div class="work-info">
-                <div class="url">
-                  <div class="title"><span>URL</span></div>
-                  <a href="https://crosset.onward.co.jp" target="_blank">https://crosset.onward.co.jp</a>
-                </div>
-                <div class="tool">
-                  <div class="title"><span>使用ツール</span></div>
-                  HTML・CSS(SASS) / PHP / jQuery / MovableType<br>Photoshop / Sublime Text 2
-                </div>
-                <div class="point">
-                  <div class="title"><span>詳細</span></div>
-                  全面リニューアルに伴うPC、スマホ、モバイルのコーディングとリニューアル後の更新作業を行いました。
-                  コーダーの主担当として開発に携わり、大規模ECサイトの制作方法やECの知識を学ぶことができました。
-                </div>
+              <div class="work-detail">
+                <ul class="work-detail_lists">
+                  <li class="work-detail_item work-detail_item--url">
+                    <div class="work-detail_title"><span>URL</span></div>
+                    <div class="work-detail_info"><a href="https://crosset.onward.co.jp" target="_blank">https://crosset.onward.co.jp</a></div>
+                  </li>
+                  <li class="work-detail_item work-detail_item--tool">
+                    <div class="work-detail_title"><span>使用ツール</span></div>
+                    <div class="work-detail_info">HTML・CSS(SASS) / PHP / jQuery / MovableType<br>Photoshop / Sublime Text 2</div>
+                  </li>
+                  <li class="work-detail_item work-detail_item--point">
+                    <div class="work-detail_title"><span>担当</span></div>
+                    <div class="work-detail_info">更新作業やページ改修。サイトの全面リニューアル</div>
+                  </li>
+                </ul>
               </div>
-            </li>
-            <!-- <li class="js-fade">
-              <div class="site">natu savon</div>
-              <div class="visual">
-                <img src="common/img/work_2.jpg" alt="natu savon" class="img-responsive">
-              </div>
-              <div class="work-info">
-                <div class="url">
-                  <div class="title"><span>URL</span></div>
-                  http://www.natusavon.com (現在は公開終了)
-                </div>
-                <div class="tool">
-                  <div class="title"><span>使用ツール</span></div>
-                  HTML・CSS / jQuery / Sublime Text 2 / Photoshop
-                </div>
-                <div class="point">
-                  <div class="title"><span>詳細</span></div>
-                  レスポンシブサイトのコーディングを担当しました。PC、スマホで共通化できる部分を多くし、なるべくHTMLをシンプルで少ない構造にするようにしました。また、CSSアニメーションやjQueryの簡単な演出を加え、動きのあるサイトになるようにしました。
-                </div>
-              </div>
-            </li>
-            <li class="js-fade">
-              <div class="site">ONIJUS COFFEE</div>
-              <div class="visual">
-                <a href="http://onijus.com/sp/" target="_blank" media="" class="toGray">
-                  <img src="common/img/work_1.jpg" alt="ONIJUS COFFEE" class="img-responsive">
-                </a>
-              </div>
-              <div class="work-info">
-                <div class="url">
-                  <div class="title"><span>URL</span></div>
-                  <a href="http://onijus.com/sp/" target="_blank">http://onijus.com/sp/</a>
-                </div>
-                <div class="tool">
-                  <div class="title"><span>使用ツール</span></div>
-                  HTML・CSS / jQuery / Photoshop / Sublime Text 2
-                </div>
-                <div class="point">
-                  <div class="title"><span>詳細</span></div>
-                  スマホ版のコーディングを担当しました。CSSアニメーションやjQueryの簡単な演出を加え、動きのあるサイトになるようにしました。
-                </div>
-              </div>
-            </li> -->
-          </ul>
+            </dd>
+          </dl>
         </div>
-      </section>
-      <!-- /works -->
+      </div>
+    </section>
+    <!-- /works -->
 
-      <!-- about -->
-      <section id="about" class="section">
-        <div class="container">
-          <h3 class="js-fade">about</h3>
-          <ul class="about-me">
-            <div class="about-visual js-fade"><img class="img-circle" src="common/img/about_visual.jpg" alt=""></div>
-            <ul class="about-detail js-fade">
-              <li class="profile">
-                <div class="title">Profile</div>
+    <!-- about -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section_title js-target js-top-bottom">about</h2>
+        <div class="profile-block">
+          <div class="profile-block_visual js-target js-bottom-top"><img src="common/img/about_visual.jpg" alt=""></div>
+          <div class="profile-block_info js-target js-bottom-top">
+            <dl class="profile-detail">
+              <div class="profile-detail_title">Profile</div>
+              <div class="profile-detail_desc">
                 <p>埼玉県出身でフロントエンドエンジニアとしてWeb制作を行っています。<br>
                 大学では農学を学んでいましたが、ものづくりが好きで身近にあったWEBに興味があり、独学で勉強しWEB業界に入りました。<br>
                 WEB制作ではコーポレートサイトやキャンペーンサイトなどを中心に開発の経験があります。またEC制作会社では2年目にコーダー主担当として大手アパレルブランンドのECサイトのコーディングを担当させていただきました。</p>
                 <p>WEB業界を経験した後、若いうちに今まで学んできたことを活かして地域貢献したいと思い、1年間地域おこし協力隊として長野県に住んでおりました。<br>地域おこし協力隊ではイタリヤ野菜の栽培・販売や、栽培したとうもろこしを使ったもろこしジェラートを商品開発しました。</p>
                 <p>Web制作では見やすく管理しやすいコーディングとお客様目線になってサイトを作ることを常に心がけています。</p>
-              </li>
-              <li class="like">
-                <div class="title">Like</div>
+              </div>
+            </dl>
+            <dl class="profile-detail">
+              <div class="profile-detail_title">Like</div>
+              <div class="profile-detail_desc">
                 <p>・温泉・サウナ<br>
                 ・ゲーム<br>
                 ・料理（スパイスカレー、無水料理、燻製料理、つくりおきおかずなど）<br>
@@ -452,111 +429,119 @@
                 ・映画・アニメ<br>
                 ・ヨガ<br>
                 ・キャンプ（今後趣味にしたい）</p>
-              </li>
-              <li class="links">
-                <div class="title">Links</div>
+              </div>
+            </dl>
+            <dl class="profile-detail">
+              <div class="profile-detail_title">Links</div>
+              <div class="profile-detail_desc">
                 <p>作ったサービスや気づいたこと、備忘録などを少しずつ追加していきたいと思っています。</p>
                 <p>
                   Blog：<a href="https://nochi-log.netlify.app" target="_blank">https://nochi-log.netlify.app</a><br>
                   Qiita：<a href="https://qiita.com/nochifuchi" target="_blank">https://qiita.com/nochifuchi</a><br>
                   Github：<a href="https://github.com/nochifuchi" target="_blank">https://github.com/nochifuchi</a>
                 </p>
-              </li>
-            </p>
+              </div>
+            </dl>
           </div>
         </div>
-      </section>
-      <!-- /about -->
+      </div>
+    </section>
+    <!-- /about -->
 
-      <!-- skill -->
-      <section id="skill" class="section">
-        <div class="container">
-          <h3 class="js-fade">skill</h3>
-          <div class="skill-wrapper">
-            <div class="skill-icons js-fade">
-              <div class="skill-block">
-                <div class="skill-title">コーディング</div>
-                <ul class="skill-lists">
-                  <li>
-                    <div class="icon"><object type="image/svg+xml" data="common/img/icons/html.svg" width="50" height="50"></object></div>
-                    <div class="name">HTML5</div>
+    <!-- skill -->
+    <section id="skill" class="section">
+      <div class="container">
+        <h2 class="section_title js-target js-top-bottom">skill</h2>
+        <div class="skill-block">
+          <div class="skill-block_icon js-target js-bottom-top">
+            <dl class="skill-detail">
+              <dt class="skill-detail_title">コーディング</dt>
+              <dd class="skill-detail_info">
+                <ul class="skill-detail_lists">
+                  <li class="skill-detail_item">
+                    <div class="skill-detail_visual"><object type="image/svg+xml" data="common/img/icons/html.svg" width="50" height="50"></object></div>
+                    <div class="skill-detail_name">HTML5</div>
                   </li>
-                  <li>
-                    <div class="icon"><object type="image/svg+xml" data="common/img/icons/css.svg" width="50" height="50"></object></div>
-                    <div class="name">CSS3</div>
+                  <li class="skill-detail_item">
+                    <div class="skill-detail_visual"><object type="image/svg+xml" data="common/img/icons/css.svg" width="50" height="50"></object></div>
+                    <div class="skill-detail_name">CSS3</div>
                   </li>
-                  <li>
-                    <div class="icon"><object type="image/svg+xml" data="common/img/icons/sass.svg" width="50" height="50"></object></div>
-                    <div class="name">Sass</div>
+                  <li class="skill-detail_item">
+                    <div class="skill-detail_visual"><object type="image/svg+xml" data="common/img/icons/sass.svg" width="50" height="50"></object></div>
+                    <div class="skill-detail_name">Sass</div>
                   </li>
-                  <li>
-                    <div class="icon"><object type="image/svg+xml" data="common/img/icons/gulp.svg" width="50" height="50"></object></div>
-                    <div class="name">Gulp</div>
+                  <li class="skill-detail_item">
+                    <div class="skill-detail_visual"><object type="image/svg+xml" data="common/img/icons/gulp.svg" width="50" height="50"></object></div>
+                    <div class="skill-detail_name">Gulp</div>
                   </li>
-                  <li>
-                    <div class="icon"><object type="image/svg+xml" data="common/img/icons/javascript.svg" width="50" height="50"></object></div>
-                    <div class="name">JavaScript</div>
+                  <li class="skill-detail_item">
+                    <div class="skill-detail_visual"><object type="image/svg+xml" data="common/img/icons/javascript.svg" width="50" height="50"></object></div>
+                    <div class="skill-detail_name">JavaScript</div>
                   </li>
-                  <li>
-                    <div class="icon"><object type="image/svg+xml" data="common/img/icons/vue.svg" width="50" height="50"></object></div>
-                    <div class="name">Vue.js</div>
+                  <li class="skill-detail_item">
+                    <div class="skill-detail_visual"><object type="image/svg+xml" data="common/img/icons/vue.svg" width="50" height="50"></object></div>
+                    <div class="skill-detail_name">Vue.js</div>
                   </li>
-                  <li>
-                    <div class="icon"><object type="image/svg+xml" data="common/img/icons/nuxt.svg" width="50" height="50"></object></div>
-                    <div class="name">Nuxt.js</div>
+                  <li class="skill-detail_item">
+                    <div class="skill-detail_visual"><object type="image/svg+xml" data="common/img/icons/nuxt.svg" width="50" height="50"></object></div>
+                    <div class="skill-detail_name">Nuxt.js</div>
                   </li>
-                  <li>
-                    <div class="icon"><object type="image/svg+xml" data="common/img/icons/angular.svg" width="50" height="50"></object></div>
-                    <div class="name">Angular</div>
+                  <li class="skill-detail_item">
+                    <div class="skill-detail_visual"><object type="image/svg+xml" data="common/img/icons/angular.svg" width="50" height="50"></object></div>
+                    <div class="skill-detail_name">Angular</div>
                   </li>
-                  <li>
-                    <div class="icon"><object type="image/svg+xml" data="common/img/icons/gatsby.svg" width="50" height="50"></object></div>
-                    <div class="name">Gatsby.js</div>
+                  <li class="skill-detail_item">
+                    <div class="skill-detail_visual"><object type="image/svg+xml" data="common/img/icons/gatsby.svg" width="50" height="50"></object></div>
+                    <div class="skill-detail_name">Gatsby.js</div>
                   </li>
-                  <li>
-                    <div class="icon"><object type="image/svg+xml" data="common/img/icons/php.svg" width="50" height="50"></object></div>
-                    <div class="name">PHP</div>
+                  <li class="skill-detail_item">
+                    <div class="skill-detail_visual"><object type="image/svg+xml" data="common/img/icons/php.svg" width="50" height="50"></object></div>
+                    <div class="skill-detail_name">PHP</div>
                   </li>
-                  <li>
-                    <div class="icon"><object type="image/svg+xml" data="common/img/icons/git.svg" width="50" height="50"></object></div>
-                    <div class="name">Git</div>
+                  <li class="skill-detail_item">
+                    <div class="skill-detail_visual"><object type="image/svg+xml" data="common/img/icons/git.svg" width="50" height="50"></object></div>
+                    <div class="skill-detail_name">Git</div>
                   </li>
-                  <li>
-                    <div class="icon"><object type="image/svg+xml" data="common/img/icons/vscode.svg" width="50" height="50"></object></div>
-                    <div class="name">VS Code</div>
+                  <li class="skill-detail_item">
+                    <div class="skill-detail_visual"><object type="image/svg+xml" data="common/img/icons/vscode.svg" width="50" height="50"></object></div>
+                    <div class="skill-detail_name">VS Code</div>
                   </li>
-                  <li>
-                    <div class="icon"><object type="image/svg+xml" data="common/img/icons/ga.svg" width="50" height="50"></object></div>
-                    <div class="name">Google Analytics</div>
+                  <li class="skill-detail_item">
+                    <div class="skill-detail_visual"><object type="image/svg+xml" data="common/img/icons/ga.svg" width="50" height="50"></object></div>
+                    <div class="skill-detail_name">Google Analytics</div>
                   </li>
-                  <li>
-                    <div class="icon"><object type="image/svg+xml" data="common/img/icons/python.svg" width="50" height="50"></object></div>
-                    <div class="name">Python</div>
+                  <li class="skill-detail_item">
+                    <div class="skill-detail_visual"><object type="image/svg+xml" data="common/img/icons/python.svg" width="50" height="50"></object></div>
+                    <div class="skill-detail_name">Python</div>
                   </li>
-                  <li>
-                    <div class="icon"><object type="image/svg+xml" data="common/img/icons/django.svg" width="50" height="50"></object></div>
-                    <div class="name">Django</div>
-                  </li>
-                </ul>
-              </div>
-              <div class="skill-block">
-                <div class="skill-title">Desgin</div>
-                <ul class="skill-lists">
-                  <li>
-                    <div class="icon"><object type="image/svg+xml" data="common/img/icons/photoshop.svg" width="50" height="50"></object></div>
-                    <div class="name">Photshop</div>
-                  </li>
-                  <li>
-                    <div class="icon"><object type="image/svg+xml" data="common/img/icons/adobexd.svg" width="50" height="50"></object></div>
-                    <div class="name">Adobe XD</div>
+                  <li class="skill-detail_item">
+                    <div class="skill-detail_visual"><object type="image/svg+xml" data="common/img/icons/django.svg" width="50" height="50"></object></div>
+                    <div class="skill-detail_name">Django</div>
                   </li>
                 </ul>
-              </div>
-            </div>
-            <div class="skill-detail js-fade">
-              <div class="skill-block">
-                <div class="skill-title">Coding</div>
-                <div class="info">
+              </dd>
+            </dl>
+            <dl class="kill-detail">
+              <dt class="skill-detail_title">Desgin</dt>
+              <dd class="skill-detail_info">
+                <ul class="skill-detail_lists">
+                  <li class="skill-detail_item">
+                    <div class="skill-detail_visual"><object type="image/svg+xml" data="common/img/icons/photoshop.svg" width="50" height="50"></object></div>
+                    <div class="skill-detail_name">Photshop</div>
+                  </li>
+                  <li class="skill-detail_item">
+                    <div class="skill-detail_visual"><object type="image/svg+xml" data="common/img/icons/adobexd.svg" width="50" height="50"></object></div>
+                    <div class="skill-detail_name">Adobe XD</div>
+                  </li>
+                </ul>
+              </dd>
+            </dl>
+          </div>
+          <div class="skill-block_description js-target js-bottom-top">
+            <dl class="skill-detail">
+              <dt class="skill-detail_title">Coding</dt>
+              <dd class="skill-detail_info">
+                <div class="skill-detail_desc">
                   <p>
                     《HTML・CSS》（実務経験6年程度）<br>
                     ・PC・スマホ・タブレットなどマルチデバイス環境でのコーディング<br>
@@ -596,10 +581,12 @@
                     ・基礎的な知識（PostgreSQL）
                   </p>
                 </div>
-              </div>
-              <div class="skill-block">
-                <div class="skill-title">デザイン</div>
-                <div class="info">
+              </dd>
+            </dl>
+            <dl class="skill-detail">
+              <dt class="skill-detail_title">デザイン</dt>
+              <dd class="skill-detail_info">
+                <div class="skill-detail_desc">
                   <p>
                     《Photoshop》（実務経験３年程度）<br>
                     ・基本的な知識・操作<br>
@@ -615,29 +602,29 @@
                     ・基本的な知識・操作
                   </p>
                 </div>
-              </div>
-            </div>
+              </dd>
+            </dl>
           </div>
         </div>
-      </section>
-      <!-- /skill -->
+      </div>
+    </section>
+    <!-- /skill -->
 
-      <!-- contact -->
-      <section id="contact" class="section">
-        <div class="container">
-          <h3>contact</h3>
-          <div class="mail"><a class="no-underline" href="mailto:fumitaka05@gmail.com">fumitaka05@gmail.com</a></div>
-        </div>
-      </section>
-      <!-- /contact -->
+    <!-- contact -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section_title">contact</h2>
+        <div class="contact-email"><a href="mailto:fumitaka05@gmail.com">fumitaka05@gmail.com</a></div>
+      </div>
+    </section>
+    <!-- /contact -->
 
-    </div>
   </div>
   <!-- /contents -->
 
   <!-- footer -->
-  <footer id="g-footer">
-    <small>2022 Fumitaka Nozawa</small>
+  <footer class="footer">
+    <small class="footer_copyright">2022 Fumitaka Nozawa</small>
   </footer>
   <!-- /footer -->
 

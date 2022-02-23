@@ -1,7 +1,7 @@
 // hero
 document.addEventListener('DOMContentLoaded', function() {
-  const hero = document.querySelector('#main-visual');
-  const heroLead = document.querySelector('#main-visual h2');
+  const hero = document.querySelector('.main-visual');
+  const heroLead = document.querySelector('.main-visual_title');
 
   hero.classList.add('show');
   setTimeout(function() {
@@ -9,23 +9,23 @@ document.addEventListener('DOMContentLoaded', function() {
   }, 700);
 });
 
-// navbar
+// header
 document.addEventListener('DOMContentLoaded', function() {
-  const navBar = document.querySelector('.navbar');
+  const header = document.querySelector('.header');
 
   window.addEventListener('scroll', function() {
     const scrollY = window.scrollY;
     if (scrollY > 0) {
-      navBar.classList.add('show');
+      header.classList.add('show');
     } else {
-      navBar.classList.remove('show');
+      header.classList.remove('show');
     }
   })
 });
 
-// fade contents
+// target observer
 document.addEventListener('DOMContentLoaded', function() {
-  const fadeTarget = document.querySelectorAll(".js-fade");
+  const target = document.querySelectorAll(".js-target");
 
   const options = {
     root: null,
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const observer = new IntersectionObserver(isIntersect, options);
 
-  fadeTarget.forEach(function(target) {
+  target.forEach(function(target) {
     observer.observe(target);
   });
 
@@ -54,9 +54,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // sp menu
 document.addEventListener('DOMContentLoaded', function() {
-  const navTrg = document.querySelector('.nav-trigger');
-  const nav = document.querySelector('.sp-g-nav nav');
-  const spAnkerLists = document.querySelectorAll('.sp-g-nav a[href^="#"]');
+  const navTrg = document.querySelector('.menu-btn_trigger');
+  const nav = document.querySelector('.sp-nav');
+  const spAnkerLists = document.querySelectorAll('.sp-nav a[href^="#"]');
 
   navTrg.addEventListener('click', function() {
     if(!this.classList.contains('active')) {
