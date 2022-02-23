@@ -735,11 +735,7 @@ img.sp {
   background: #fff;
 }
 
-#contact .mail img {
-  padding-right: 5px;
-}
-
-#contact .mail a {
+.contact-email a {
   width: 300px;
   display: block;
   margin: 0 auto;
@@ -749,15 +745,23 @@ img.sp {
   font-size: 18px;
 }
 
-#contact .mail a:before {
+@media screen and (max-width: 767px) {
+  .contact-email a {
+    width: 60%;
+    padding: 10px;
+    font-size: 15px;
+  }
+}
+
+.contact-email a:hover {
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+}
+
+.contact-email a:before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: '\f0e0';
   margin-right: 5px;
-}
-
-#contact .mail a:hover {
-  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
 }
 
 /*----------------------------
@@ -772,22 +776,5 @@ img.sp {
   }
   h3::after {
     width: 30px;
-  }
-  /*----------------------------
-    contact
-  -----------------------------*/
-  #contact .mail a {
-    width: 60%;
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    padding: 10px;
-    font-size: 15px;
-  }
-  #contact .mail a:before {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: '\f0e0';
-    margin-right: 5px;
   }
 }
