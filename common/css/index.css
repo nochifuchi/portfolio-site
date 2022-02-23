@@ -85,25 +85,33 @@ legend {
   color: #000;
 }
 
-/* js-fade */
-.js-fade {
+.js-top-bottom {
   opacity: 0;
-  transform: translate(0, 70px);
-  -webkit-transform: translate(0, 70px);
+  transform: translate(0, -40px);
   transition: all 0.5s ease;
 }
 
-.js-fade.show {
+.js-top-bottom.show {
   opacity: 1.0;
   transform: translate(0, 0);
-  -webkit-transform: translate(0, 0);
 }
 
-.js-fade:nth-of-type(2), .js-fade:nth-of-type(5), .js-fade:nth-of-type(8), .js-fade:nth-of-type(11) {
+.js-bottom-top {
+  opacity: 0;
+  transform: translate(0, 70px);
+  transition: all 0.5s ease;
+}
+
+.js-bottom-top.show {
+  opacity: 1.0;
+  transform: translate(0, 0);
+}
+
+.js-bottom-top:nth-of-type(2), .js-bottom-top:nth-of-type(5), .js-bottom-top:nth-of-type(8), .js-bottom-top:nth-of-type(11) {
   transition-delay: 150ms;
 }
 
-.js-fade:nth-of-type(3), .js-fade:nth-of-type(6), .js-fade:nth-of-type(9), .js-fade:nth-of-type(12) {
+.js-bottom-top:nth-of-type(3), .js-bottom-top:nth-of-type(6), .js-bottom-top:nth-of-type(9), .js-bottom-top:nth-of-type(12) {
   transition-delay: 300ms;
 }
 
@@ -383,7 +391,7 @@ a:hover {
 
 .section_title {
   font-family: fot-tsukuardgothic-std, sans-serif;
-  font-size: 35px;
+  font-size: 30px;
   text-align: center;
   margin-bottom: 60px;
 }
@@ -425,7 +433,7 @@ a:hover {
   position: relative;
   opacity: 0;
   transition: all 0.5s ease-in;
-  height: 450px;
+  height: 600px;
   background: linear-gradient(135deg, rgba(108, 148, 211, 0.8), rgba(111, 210, 237, 0.5));
 }
 

@@ -23,9 +23,9 @@ document.addEventListener('DOMContentLoaded', function() {
   })
 });
 
-// fade contents
+// target observer
 document.addEventListener('DOMContentLoaded', function() {
-  const fadeTarget = document.querySelectorAll(".js-fade");
+  const target = document.querySelectorAll(".js-target");
 
   const options = {
     root: null,
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const observer = new IntersectionObserver(isIntersect, options);
 
-  fadeTarget.forEach(function(target) {
+  target.forEach(function(target) {
     observer.observe(target);
   });
 

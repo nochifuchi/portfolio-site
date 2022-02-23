@@ -11,7 +11,7 @@
 
   &_title {
     font-family: $FOT-Tsuku;
-    font-size: 35px;
+    font-size: 30px;
     text-align: center;
     margin-bottom: 60px;
     @include sp {
@@ -48,7 +48,7 @@
   position: relative;
   opacity: 0;
   transition: all 0.5s ease-in;
-  height: 450px;
+  height: 600px;
   background: linear-gradient( 135deg, rgba(108, 148, 211, 0.8), rgba(111, 210, 237, 0.5));
   @include sp {
     height: 250px;

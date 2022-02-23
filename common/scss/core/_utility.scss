@@ -1,15 +1,22 @@
-/* js-fade */
-.js-fade {
+.js-top-bottom {
   opacity: 0;
-  transform: translate(0,70px);
-  -webkit-transform: translate(0,70px);
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  transform: translate(0,-20px);
+  transition: all 0.5s ease-out;
 
   &.show {
     opacity: 1.0;
     transform: translate(0,0);
-    -webkit-transform: translate(0,0);
+  }
+}
+
+.js-bottom-top {
+  opacity: 0;
+  transform: translate(0,70px);
+  transition: all 0.5s ease-out;
+
+  &.show {
+    opacity: 1.0;
+    transform: translate(0,0);
   }
 
   &:nth-of-type(2),
