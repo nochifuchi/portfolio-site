@@ -16,10 +16,6 @@ html,body {
   line-height: $line-height;
 }
 
-#app {
-  background: $light-grey;
-}
-
 a {
   color: $link-color;
   transition: all 0.2s ease;
@@ -31,7 +27,10 @@ a {
   }
 }
 
-/* content-block */
+#app {
+  background: $light-grey;
+}
+
 .container {
   max-width: $content-width;
   margin: 0 auto;
@@ -40,21 +39,17 @@ a {
   }
 }
 
-.inner {
-  padding: 0 5%;
-}
-
 .img-responsive {
   width: 100%;
 }
 
-img.pc {
+.is-pc {
   @include sp {
     display: none;
   }
 }
 
-img.sp {
+.is-sp {
   display: none;
   @include sp {
     display: block;

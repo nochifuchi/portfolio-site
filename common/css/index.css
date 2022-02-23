@@ -99,7 +99,6 @@ legend {
   -webkit-transform: translate(0, 0);
 }
 
-/* 要素表示をずらす */
 .js-fade:nth-of-type(2), .js-fade:nth-of-type(5), .js-fade:nth-of-type(8), .js-fade:nth-of-type(11) {
   transition-delay: 150ms;
 }
@@ -108,20 +107,15 @@ legend {
   transition-delay: 300ms;
 }
 
-.toGray {
+.img-grey {
   -webkit-filter: grayscale(0%);
           filter: grayscale(0%);
   transition: all 0.4s ease;
 }
 
-.toGray:hover {
+.img-grey:hover {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
-}
-
-.img-circle {
-  border-radius: 50%;
-  border: 1px solid #bfbfbf;
 }
 
 a.hover-line {
@@ -160,10 +154,6 @@ html, body {
   line-height: 1.75;
 }
 
-#app {
-  background: #fafafa;
-}
-
 a {
   color: #666;
   transition: all 0.2s ease;
@@ -176,7 +166,10 @@ a:hover {
   text-decoration: none;
 }
 
-/* content-block */
+#app {
+  background: #fafafa;
+}
+
 .container {
   max-width: 1000px;
   margin: 0 auto;
@@ -188,26 +181,22 @@ a:hover {
   }
 }
 
-.inner {
-  padding: 0 5%;
-}
-
 .img-responsive {
   width: 100%;
 }
 
 @media screen and (max-width: 767px) {
-  img.pc {
+  .is-pc {
     display: none;
   }
 }
 
-img.sp {
+.is-sp {
   display: none;
 }
 
 @media screen and (max-width: 767px) {
-  img.sp {
+  .is-sp {
     display: block;
   }
 }
@@ -601,6 +590,8 @@ img.sp {
 
 .profile-block_visual img {
   width: 80%;
+  border-radius: 50%;
+  border: 1px solid #bfbfbf;
 }
 
 @media screen and (max-width: 767px) {
