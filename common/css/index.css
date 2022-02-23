@@ -87,8 +87,8 @@ legend {
 
 .js-top-bottom {
   opacity: 0;
-  transform: translate(0, -40px);
-  transition: all 0.5s ease;
+  transform: translate(0, -20px);
+  transition: all 0.5s ease-out;
 }
 
 .js-top-bottom.show {
@@ -99,7 +99,7 @@ legend {
 .js-bottom-top {
   opacity: 0;
   transform: translate(0, 70px);
-  transition: all 0.5s ease;
+  transition: all 0.5s ease-out;
 }
 
 .js-bottom-top.show {
@@ -260,6 +260,9 @@ a:hover {
 }
 
 .header .g-nav_item a {
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 3px;
+  font-weight: bold;
   font-size: 15px;
   color: #fff;
   transition: all 0.5s ease-in-out;
@@ -390,7 +393,8 @@ a:hover {
 }
 
 .section_title {
-  font-family: fot-tsukuardgothic-std, sans-serif;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 3px;
   font-size: 30px;
   text-align: center;
   margin-bottom: 60px;
@@ -449,7 +453,8 @@ a:hover {
 
 .main-visual_title {
   font-size: 30px;
-  font-family: fot-tsukuardgothic-std, sans-serif;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 3px;
   color: #fff;
   position: absolute;
   top: 50%;
@@ -623,7 +628,8 @@ a:hover {
 }
 
 .profile-detail_title {
-  font-family: fot-tsukuardgothic-std, sans-serif;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 3px;
   font-size: 20px;
 }
 
@@ -672,7 +678,8 @@ a:hover {
 
 .skill-detail_title {
   font-size: 18px;
-  font-family: fot-tsukuardgothic-std, sans-serif;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 3px;
 }
 
 .skill-detail_lists {

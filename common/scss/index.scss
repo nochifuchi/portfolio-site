@@ -10,7 +10,7 @@
   }
 
   &_title {
-    font-family: $FOT-Tsuku;
+    @include font-Oswald;
     font-size: 30px;
     text-align: center;
     margin-bottom: 60px;
@@ -60,7 +60,7 @@
 
   &_title {
     font-size: 30px;
-    font-family: $FOT-Tsuku;
+    @include font-Oswald;
     color: $white;
     position: absolute;
     top: 50%;
@@ -214,7 +214,7 @@
   }
 
   &_title {
-    font-family: $FOT-Tsuku;
+    @include font-Oswald;
     font-size: 20px;
   }
 
@@ -259,7 +259,7 @@
 
   &_title {
     font-size: 18px;
-    font-family: $FOT-Tsuku;
+    @include font-Oswald;
   }
 
   &_lists {

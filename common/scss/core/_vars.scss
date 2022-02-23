@@ -7,8 +7,11 @@ $sp-content-width: 92%;
 
 // fonts
 $basic-font-family:'Noto Sans Japanese',"ヒラギノ角ゴ Pro W6","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック",MS PGothic,sans-serif;
-$FOT-Tsuku: fot-tsukuardgothic-std, sans-serif;
-$meiryo: "メイリオ";
+
+@mixin font-Oswald {
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 3px;
+}
 
 // font-size
 $font-xxs: 10px;
