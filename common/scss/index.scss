@@ -86,7 +86,6 @@
 -----------------------------*/
 .work-lists {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   @include sp {
     display: block;
@@ -98,14 +97,16 @@
     border: 1px solid $grey;
     border-radius: 8px;
     box-shadow: 2px 2px 4px $grey;
-    margin-bottom: 2%;
+    margin: 0 2% 2% 0;
     position: relative;
     background: $white;
-    @include tab {
-      width: calc(96%/2);
-    }
     @include sp {
       width: 100%;
+      margin: 0 0 6% 0;
+    }
+
+    &:nth-of-type(3n) {
+      margin-right: 0;
     }
   }
 
@@ -165,6 +166,11 @@
 
   &_info {
     word-break: break-all;
+
+    a {
+      border-bottom: 1px solid $default-color;
+      padding-bottom: 1px;
+    }
   }
 }
 
