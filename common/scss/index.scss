@@ -217,60 +217,91 @@
 /*----------------------------
   skill
 -----------------------------*/
-.skill-wrapper {
+.skill-block {
   display: flex;
   justify-content: space-between;
-}
-.skill-block + .skill-block {
-  margin-top: 10px;
-}
-.skill-title {
-  font-size: 18px;
-  font-family: $FOT-Tsuku;
-}
-.skill-icons {
-  width: 45%;
-}
-.skill-lists {
-  display: flex;
-  flex-wrap: wrap;
-}
-.skill-lists li {
-  width: 100px;
-  background: $white;
-  padding: 10px 0;
-  margin-right: 5px;
-  margin-bottom: 5px;
-  text-align: center;
-  box-sizing: border-box;
-  border: 1px solid $grey;
-  border-radius: 8px;
-  box-shadow: 2px 2px 4px $grey;
-  &:nth-of-type(4n) {
-    margin-right: 0;
+  @include sp {
+    display: block;
+  }
+
+  &_icon {
+    width: 45%;
+
+    @include sp {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  &_description {
+    width: 53%;
+    @include sp {
+      width: 100%;
+    }
   }
 }
-.skill-lists .icon {
-  img {
-    width: 50px;
-    height: 50px;
+
+.skill-detail {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  &_title {
+    font-size: 18px;
+    font-family: $FOT-Tsuku;
+  }
+
+  &_lists {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &_item {
+    width: calc(97%/4);
+    background: $white;
+    padding: 10px 0;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid $grey;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px $grey;
+    @include sp {
+      width: calc(97%/3);
+    }
+
+    &:nth-of-type(3n) {
+      @include sp {
+        margin-right: 0;
+      }
+    }
+
+    &:nth-of-type(4n) {
+      margin-right: 0;
+      @include sp {
+        margin-right: 1%;
+      }
+    }
+  }
+
+  &_visual img {
     border-radius: 4px;
   }
-}
-.skill-lists .name {
-  font-size: 11px;
-}
-.skill-detail {
-  width: 53%;
-}
-.skill-detail .info {
-  background: $white;
-  padding: 10px;
-  margin-bottom: 5px;
-  box-sizing: border-box;
-  border: 1px solid $grey;
-  border-radius: 8px;
-  box-shadow: 2px 2px 4px $grey;
+
+  &_name {
+    font-size: 11px;
+  }
+
+  &_text {
+    background: $white;
+    padding: 10px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    border: 1px solid $grey;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px $grey;
+  }
 }
 
 /*----------------------------
@@ -313,31 +344,6 @@
   }
   h3::after {
     width: 30px;
-  }
-
-  /*----------------------------
-    skill
-  -----------------------------*/
-  .skill-wrapper {
-    display: block;
-  }
-  .skill-icons {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  .skill-lists .icon {
-    img {
-      width: 50%;
-      height: auto;
-      border-radius: 4px;
-    }
-  }
-  .skill-lists li {
-    width: calc(97%/4);
-    margin-right: 1%;
-  }
-  .skill-detail {
-    width: 100%;
   }
 
   /*----------------------------
