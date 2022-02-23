@@ -131,24 +131,6 @@
     &:last-child {
       margin-bottom: 0;
     }
-
-    &--url {
-      .work-detail_title:before {
-        content: '\f109';
-      }
-    }
-
-    &--tool {
-      .work-detail_title:before {
-        content: '\f6e3';
-      }
-    }
-
-    &--point {
-      .work-detail_title:before {
-        content: '\f0a4';
-      }
-    }
   }
 
   &_title {
@@ -160,6 +142,24 @@
       font-weight: 900;
       color: $default-color;
       margin-right: 3px;
+    }
+
+    &--url {
+      &::before {
+        content: '\f109';
+      }
+    }
+
+    &--tool {
+      &::before {
+        content: '\f6e3';
+      }
+    }
+
+    &--charge {
+      &::before {
+        content: '\f0a4';
+      }
     }
   }
 
