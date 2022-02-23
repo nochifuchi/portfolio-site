@@ -176,10 +176,6 @@ a:hover {
   text-decoration: none;
 }
 
-p + p {
-  margin-top: 10px;
-}
-
 /* content-block */
 .container {
   max-width: 1000px;
@@ -632,6 +628,10 @@ img.sp {
   font-size: 20px;
 }
 
+.profile-detail_desc p:not(:last-child) {
+  margin-bottom: 10px;
+}
+
 /*----------------------------
   skill
 -----------------------------*/
@@ -724,7 +724,7 @@ img.sp {
   font-size: 11px;
 }
 
-.skill-detail_text {
+.skill-detail_desc {
   background: #fff;
   padding: 10px;
   margin-bottom: 5px;
@@ -732,6 +732,10 @@ img.sp {
   border: 1px solid #efefef;
   border-radius: 8px;
   box-shadow: 2px 2px 4px #efefef;
+}
+
+.skill-detail_desc p:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 /*----------------------------

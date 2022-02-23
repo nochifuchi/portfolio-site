@@ -215,6 +215,12 @@
     font-family: $FOT-Tsuku;
     font-size: 20px;
   }
+
+  &_desc p {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
 }
 
 /*----------------------------
@@ -296,7 +302,7 @@
     font-size: 11px;
   }
 
-  &_text {
+  &_desc {
     background: $white;
     padding: 10px;
     margin-bottom: 5px;
@@ -304,6 +310,12 @@
     border: 1px solid $grey;
     border-radius: 8px;
     box-shadow: 2px 2px 4px $grey;
+  }
+
+  &_desc p {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
   }
 }
 
