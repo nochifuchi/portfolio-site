@@ -25,6 +25,9 @@
       margin: 5px auto 0;
       border-bottom: 2px solid #000;
       content: "";
+      @include sp {
+        width: 30px;
+      }
     }
 
     &.js-fade {
@@ -320,8 +323,9 @@
     padding: 20px;
     border: 2px solid #000;
     font-size: 18px;
+    word-break: break-all;
     @include sp {
-      width: 60%;
+      width: 80%;
       padding: 10px;
       font-size: 15px;
     }
@@ -336,20 +340,5 @@
       content: '\f0e0';
       margin-right: 5px;
     }
-  }
-}
-
-/*----------------------------
-
-  sp
-
------------------------------*/
-@media screen and (max-width: 680px) {
-  h3 {
-    font-size: 28px;
-    margin-bottom: 30px;
-  }
-  h3::after {
-    width: 30px;
   }
 }

@@ -418,6 +418,12 @@ img.sp {
   content: "";
 }
 
+@media screen and (max-width: 767px) {
+  .section_title:after {
+    width: 30px;
+  }
+}
+
 .section_title.js-fade {
   opacity: 0;
   transition: all 0.5s ease-in;
@@ -743,11 +749,12 @@ img.sp {
   padding: 20px;
   border: 2px solid #000;
   font-size: 18px;
+  word-break: break-all;
 }
 
 @media screen and (max-width: 767px) {
   .contact-email a {
-    width: 60%;
+    width: 80%;
     padding: 10px;
     font-size: 15px;
   }
@@ -762,19 +769,4 @@ img.sp {
   font-weight: 900;
   content: '\f0e0';
   margin-right: 5px;
-}
-
-/*----------------------------
-
-  sp
-
------------------------------*/
-@media screen and (max-width: 680px) {
-  h3 {
-    font-size: 28px;
-    margin-bottom: 30px;
-  }
-  h3::after {
-    width: 30px;
-  }
 }
