@@ -1,0 +1,35 @@
+{
+  "name": "vite",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/eslint": "^8",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.55.0",
+    "eslint-config-prettier": "^9.1.0",
+    "postcss": "^8.4.32",
+    "postcss-scss": "^4.0.9",
+    "prettier": "^3.1.0",
+    "sass": "^1.69.5",
+    "stylelint": "15",
+    "stylelint-config-standard-scss": "^11.1.0",
+    "stylelint-order": "^6.0.4",
+    "stylelint-prettier": "^4.1.0",
+    "stylelint-scss": "^5.3.1",
+    "typescript": "^5.2.2",
+    "vite": "4",
+    "vite-plugin-handlebars": "^1.6.0"
+  },
+  "volta": {
+    "node": "18.17.1",
+    "yarn": "4.0.1"
+  }
+}

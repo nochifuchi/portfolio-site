@@ -4,5 +4,3 @@ portfolio.code-workspace
 
 # Gulp
 node_modules
-package-lock.json
-package.json
