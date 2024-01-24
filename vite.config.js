@@ -5,6 +5,7 @@ import handlebars from 'vite-plugin-handlebars';
 import { pageData } from './pageData';
 
 export default defineConfig({
+  base: "./",
   build: {
     outDir: 'docs',
     rollupOptions: {
