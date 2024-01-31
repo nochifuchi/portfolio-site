@@ -1,0 +1,30 @@
+/* ==========================================================================
+   アスペクト比を保つ
+   ========================================================================== */
+@use "sass:list";
+@use "sass:math";
+
+@mixin aspect-ratio($width, $height, $option: none) {
+    display: flex;
+    aspect-ratio: list.slash($width, $height);
+
+    > img {
+        object-fit: contain;
+    }
+
+    @supports not (aspect-ratio: auto) {
+        position: relative;
+        padding-top: math.div($height, $width) * 100%;
+
+        > img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            margin: auto;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+*,
+*::before,
+*::after {
+    color-scheme: light dark;
+    box-sizing: border-box;
+    text-size-adjust: 100%;
+}
+
+body {
+    line-height: 1.5;
+    min-height: 100vh;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
