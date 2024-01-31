@@ -1,4 +1,6 @@
 {
+  "eslint.run": "onSave",
+  "eslint.validate": ["javascript", "typescript"],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "stylelint.snippet": ["scss"],

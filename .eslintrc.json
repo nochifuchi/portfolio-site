@@ -1,0 +1,19 @@
+{
+  "extends": ["plugin:@typescript-eslint/recommended-type-checked", "prettier"],
+  "overrides": [],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": ["./tsconfig.json"]
+  },
+  "plugins": ["@typescript-eslint"],
+  "ignorePatterns": ["**/*.js"],
+  "rules": {
+    "import/prefer-default-export": "off",
+    "@typescript-eslint/consistent-type-imports": "error",
+    "@typescript-eslint/no-use-before-define": "error",
+    "@typescript-eslint/no-unused-vars": "error",
+    "arrow-body-style": ["error", "always"],
+    "no-use-before-define": "off",
+    "no-unused-vars": "off"
+  }
+}
