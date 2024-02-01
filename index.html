@@ -1,18 +1,18 @@
 <!doctype html>
 <html lang="ja">
   <head>
-    {{> head title=title}}
+    {{> 02-generic/meta title=title}} {{> 02-generic/styles}}
+    <link rel="stylesheet" type="text/css" href="/src/scss/90-pages/top/index.scss" />
   </head>
   <body>
-    <div id="app">
-      <!-- header -->
-      {{> header}}
+    <!-- header -->
+    {{> 20-components/header}}
 
-      <main></main>
+    <main></main>
 
-      <!-- footer -->
-      {{> footer}}
-    </div>
-    <!-- <script src="/src/ts/index.ts" type="module"></script> -->
+    <!-- footer -->
+    {{> 20-components/footer}}
+
+    <script src="/src/ts/90-pages/top/index.ts" type="module"></script>
   </body>
 </html>
