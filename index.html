@@ -1,18 +1,18 @@
 <!doctype html>
 <html lang="ja">
   <head>
-    {{> 02-generic/meta title=title}} {{> 02-generic/styles}}
-    <link rel="stylesheet" type="text/css" href="/src/scss/90-pages/top/index.scss" />
+    {{> 02-generic/head/meta title=title}} {{> 02-generic/head/styles}}
+    <link rel="stylesheet" type="text/css" href="/src/scss/90-pages/top/top.scss" />
   </head>
   <body>
     <!-- header -->
-    {{> 20-components/header}}
+    {{> 20-components/header/header}}
 
     <main></main>
 
     <!-- footer -->
-    {{> 20-components/footer}}
+    {{> 20-components/footer/footer}}
 
-    <script src="/src/ts/90-pages/top/index.ts" type="module"></script>
+    <script src="/src/ts/90-pages/top/top.ts" type="module"></script>
   </body>
 </html>
