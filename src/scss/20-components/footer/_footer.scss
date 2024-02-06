@@ -4,7 +4,7 @@
 @use '../../01-utils' as *;
 
 .c-footer {
-    border-top: 1px solid $text-color-gray;
+    border-top: 1px solid $border-color;
 }
 
 .c-footer__inner {
