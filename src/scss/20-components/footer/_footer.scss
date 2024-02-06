@@ -1,0 +1,19 @@
+/*
+    フッター
+*/
+@use '../../01-utils' as *;
+
+.c-footer {
+    border-top: 1px solid $text-color-gray;
+}
+
+.c-footer__inner {
+    max-width: $content-max-width;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+
+.c-footer__copyright {
+    font-size: font-size(14);
+    text-align: center;
+}
