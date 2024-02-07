@@ -31,3 +31,7 @@ $text-color-gray-hover: var(--text-color-gray-hover);
 @include set-color(--border-color, #cbd5e1);
 
 $border-color: var(--border-color);
+
+@include set-color(--border-color-gray, #475569);
+
+$border-color-gray: var(--border-color-gray);
