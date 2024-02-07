@@ -1,4 +1,15 @@
-$base-font-family: sans-serif;
-$font-bold: bold;
+$base-font-family:
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    blinkmacsystemfont,
+    segoe ui,
+    roboto,
+    helvetica neue,
+    arial,
+    noto sans,
+    sans-serif;
 $font-normal: normal;
+$font-bold: bold;
+$font-black: 900;
 $base-line-height: 1.2;

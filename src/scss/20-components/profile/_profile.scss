@@ -1,0 +1,28 @@
+/*
+    プロフィール
+*/
+@use '../../01-utils' as *;
+
+// タイトル
+@use '../../10-objects/title/title' as *;
+
+.c-profile {
+    border-bottom: 1px solid $border-color;
+    padding-bottom: 30px;
+
+    .c-profile__icon {
+        img {
+            border: 2px solid $border-color;
+            border-radius: 50%;
+        }
+    }
+
+    .o-title {
+        margin-top: 20px;
+    }
+
+    .c-profile__job {
+        margin-top: 10px;
+        color: $text-color-gray;
+    }
+}

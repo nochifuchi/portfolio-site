@@ -1,8 +1,8 @@
 /* ==========================================================================
   breakpointのmixin
   ========================================================================== */
-@use "sass:math";
-@use "sass:map";
+@use 'sass:math';
+@use 'sass:map';
 
 /*
     使い方：例
@@ -37,7 +37,7 @@ $option-floor: 0.02; // 境界の差を設定
         $value: $value - $option-floor;
     }
 
-    @return "(#{$key}-width: #{$value}px)";
+    @return '(#{$key}-width: #{$value}px)';
 }
 
 // レスポンシブ設定のmixin

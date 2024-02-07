@@ -1,3 +1,5 @@
+@use '../01-utils' as *;
+
 *,
 *::before,
 *::after {
@@ -8,6 +10,7 @@
 body {
     display: block;
     min-height: 100vh;
+    font-family: $base-font-family;
     line-height: 1.5;
 }
 

@@ -1,0 +1,14 @@
+/*
+    メインのレイアウト
+*/
+@use '../../01-utils' as *;
+
+.l-main {
+    max-width: $content-max-width;
+    margin: 0 auto;
+    padding: 60px 1rem;
+
+    @include break-points(max, md) {
+        padding: 30px 1rem;
+    }
+}
