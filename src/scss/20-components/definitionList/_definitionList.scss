@@ -1,0 +1,20 @@
+/*
+    定義リスト
+*/
+@use '../../01-utils' as *;
+@use '../../10-objects/subTitle/subTitle' as *;
+
+.c-definition-list {
+    dt {
+        > a {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    dd {
+        margin-top: 4px;
+        font-size: font-size(14);
+    }
+}

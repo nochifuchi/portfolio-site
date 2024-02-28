@@ -13,5 +13,8 @@
 // フッター
 @use '../../20-components/footer/footer' as *;
 
-// プロフィール
-@use '../../20-components/profile/profile' as *;
+// トッププロフィール
+@use '../../20-components/top/profile/profile' as *;
+
+// トップリンクリスト
+@use '../../20-components/top/linkList/linkList' as *;

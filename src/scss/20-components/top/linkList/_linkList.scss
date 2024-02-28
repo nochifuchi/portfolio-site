@@ -1,0 +1,15 @@
+/*
+    トップリンクリスト
+*/
+@use '../../../01-utils/' as *;
+@use '../../../20-components/definitionList/definitionList' as *;
+
+.c-top-link-list {
+    padding-top: 20px;
+
+    .c-definition-list {
+        & + .c-definition-list {
+            margin-top: 15px;
+        }
+    }
+}
