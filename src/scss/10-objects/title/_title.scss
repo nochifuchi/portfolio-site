@@ -1,0 +1,10 @@
+/*
+    タイトル
+*/
+@use '../../01-utils' as *;
+
+.o-title {
+    font-size: font-size(25);
+    font-weight: $font-black;
+    letter-spacing: -0.4px;
+}

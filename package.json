@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
@@ -29,7 +30,6 @@
     "vite-plugin-handlebars": "^1.6.0"
   },
   "volta": {
-    "node": "18.17.1",
-    "yarn": "1.22.10"
+    "node": "18.17.1"
   }
 }

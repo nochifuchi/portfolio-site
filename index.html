@@ -1,36 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
   <head>
-    {{> head title=title}}
+    {{> 02-generic/head/meta title=title}} {{> 02-generic/head/styles}}
+    <link rel="stylesheet" type="text/css" href="/src/scss/90-pages/top/top.scss" />
   </head>
   <body>
-    <div id="app">
-      <!-- header -->
-      {{> header}}
+    <!-- header -->
+    <!-- {{> 20-components/header/header}} -->
 
-      <!-- sp-menu -->
-      <!-- {{> sp-menu}} -->
+    <main class="l-main">
+      {{> 20-components/top/profile/profile}} {{> 20-components/top/linkList/linkList}}
+    </main>
 
-      <!-- main-visual -->
-      {{> main-visual}}
+    <!-- footer -->
+    {{> 20-components/footer/footer}}
 
-      <main>
-        <!-- works -->
-        {{> works}}
-
-        <!-- about -->
-        {{> about}}
-
-        <!-- skill -->
-        {{> skill}}
-
-        <!-- contact -->
-        {{> contact}}
-      </main>
-
-      <!-- footer -->
-      {{> footer}}
-    </div>
-    <script src="/src/ts/index.ts" type="module"></script>
+    <script src="/src/ts/90-pages/top/top.ts" type="module"></script>
   </body>
 </html>

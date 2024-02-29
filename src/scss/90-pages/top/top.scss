@@ -1,0 +1,20 @@
+/*
+    トップ
+*/
+@use '../../01-utils' as *;
+@use '../../02-generic' as *;
+
+// メイン
+@use '../../03-layouts/main/main';
+
+// ヘッダー
+@use '../../20-components/header/header';
+
+// フッター
+@use '../../20-components/footer/footer';
+
+// トッププロフィール
+@use '../../20-components/top/profile/profile';
+
+// トップリンクリスト
+@use '../../20-components/top/linkList/linkList';

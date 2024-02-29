@@ -1,0 +1,10 @@
+@use 'sass:math';
+
+@function font-size($font-size, $font-size-base: 16) {
+    // 引数が数値以外だったらエラーを返す
+    @if type-of($font-size) != 'number' {
+        @error 'font-sizeの引数は必ず数値で指定してください';
+    }
+
+    @return math.div($font-size, $font-size-base) + rem;
+}
