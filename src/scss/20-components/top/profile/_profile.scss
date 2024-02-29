@@ -4,7 +4,7 @@
 @use '../../../01-utils' as *;
 
 // タイトル
-@use '../../../10-objects/title/title' as *;
+@use '../../../10-objects/title/title';
 
 .c-top-profile {
     border-bottom: 1px solid $border-color;

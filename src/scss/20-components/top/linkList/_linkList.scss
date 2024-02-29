@@ -2,7 +2,9 @@
     トップリンクリスト
 */
 @use '../../../01-utils/' as *;
-@use '../../../20-components/definitionList/definitionList' as *;
+
+// 定義リスト
+@use '../../../20-components/definitionList/definitionList';
 
 .c-top-link-list {
     padding-top: 20px;

@@ -2,7 +2,7 @@
     定義リスト
 */
 @use '../../01-utils' as *;
-@use '../../10-objects/subTitle/subTitle' as *;
+@use '../../10-objects/subTitle/subTitle';
 
 .c-definition-list {
     dt {
