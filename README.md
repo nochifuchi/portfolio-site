@@ -4,7 +4,7 @@
 
 - vite
 - vite-plugin-handlebars（コンポーネント毎に分けるため）
-- yarn
+- pnpm
 - TypeScript
 
 ## 環境構築手順
@@ -12,18 +12,18 @@
 パケージをインストール
 
 ```
-yarn
+pnpm i
 ```
 
 ローカル環境立ち上げ
 
 ```
-yarn vite
+pnpm vite
 ```
 
 ビルド
 docs ディレクトリ配下にビルドされる
 
 ```
-yarn build
+pnpm build
 ```
