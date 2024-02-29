@@ -3,10 +3,6 @@
 */
 @use '../../01-utils' as *;
 
-.c-footer {
-    border-top: 1px solid $border-color-gray;
-}
-
 .c-footer__inner {
     max-width: $content-max-width;
     margin: 0 auto;
