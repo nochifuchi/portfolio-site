@@ -1,0 +1,16 @@
+<!-- アバウト タイムライン ブロック -->
+
+<div class="c-about-timeline__block{{#if isWork}} _accent{{/if}}">
+  <div class="c-about-timeline__left-side">
+    <div class="c-about-timeline__line"></div>
+    <div class="c-about-timeline__circle"><span></span></div>
+    <div class="c-about-timeline__line"></div>
+  </div>
+  <div class="c-about-timeline__right-side">
+    <p class="c-about-timeline__time">{{date}}</p>
+    <h3 class="c-about-timeline__title">{{{title}}}</h3>
+    {{#if text}}
+    <p class="c-about-timeline__text">{{{text}}}</p>
+    {{/if}}
+  </div>
+</div>

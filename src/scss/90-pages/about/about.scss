@@ -16,5 +16,15 @@
 // タイトル
 @use '../../10-objects/title/title';
 
+// サブタイトル
+@use '../../10-objects/subTitle/subTitle';
+
 // テキストブロック
 @use '../../10-objects/textBlock/textBlock';
+
+// タイムライン
+@use '../../20-components/about/timeline/timeline';
+
+.o-sub-title {
+    margin-top: 50px;
+}
