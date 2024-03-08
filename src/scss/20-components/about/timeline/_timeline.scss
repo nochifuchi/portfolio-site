@@ -1,9 +1,9 @@
 /*
-    アバウト タイムライン
+    aboutTimeline
 */
 @use '../../../01-utils/' as *;
 
-// タイムラインブロック
+// timelineBlock
 @use './timelineBlock/timelineBlock';
 
 .c-about-timeline {
