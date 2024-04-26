@@ -2,3 +2,33 @@
     header
 */
 @use '../../01-utils' as *;
+
+.c-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 50px;
+    background-color: $background-gray-color;
+
+    .c-header__inner {
+        max-width: $content-max-width;
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+
+    .c-header__profile {
+        > a {
+            display: inline-flex;
+            align-items: center;
+        }
+    }
+
+    .c-header__profile-logo {
+        margin-right: 4px;
+
+        > img {
+            border-radius: 50%;
+        }
+    }
+}
