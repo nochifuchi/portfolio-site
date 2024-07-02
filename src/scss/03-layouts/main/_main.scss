@@ -1,5 +1,5 @@
 /*
-    メインのレイアウト
+    main
 */
 @use '../../01-utils' as *;
 
@@ -9,6 +9,7 @@
     padding: 60px 1rem;
 
     @include break-points(max, md) {
-        padding: 30px 1rem;
+        margin-top: 50px;
+        padding: 1rem;
     }
 }

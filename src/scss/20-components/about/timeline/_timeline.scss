@@ -1,0 +1,11 @@
+/*
+    aboutTimeline
+*/
+@use '../../../01-utils/' as *;
+
+// timelineBlock
+@use './timelineBlock/timelineBlock';
+
+.c-about-timeline {
+    padding: 20px 0;
+}
