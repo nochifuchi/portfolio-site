@@ -4,18 +4,6 @@
     汎用カラー
 */
 
-// プライマリー
-// @include set-color(--primary-color, #000, $hover: #1e293b);
-
-// $primary-color: var(--primary-color);
-// $primary-color-hover: var(--primary-color-hover);
-
-// 背景
-// @include set-color(--background-color, #eef0f2, $hover: #caccce, $dark: #222);
-
-// $background-color: var(--background-color);
-// $background-color-hover: var(--background-color-hover);
-
 // テキスト
 @include set-color(--text-color, #000, $hover: #1e293b);
 
