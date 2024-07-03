@@ -1,0 +1,15 @@
+/*
+    main
+*/
+@use '../../01-utils' as *;
+
+.l-main {
+    max-width: $content-max-width;
+    margin: 0 auto;
+    padding: 60px 1rem;
+
+    @include break-points(max, md) {
+        margin-top: 50px;
+        padding: 1rem;
+    }
+}

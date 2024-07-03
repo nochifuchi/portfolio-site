@@ -1,0 +1,17 @@
+/*
+    topLinkList
+*/
+@use '../../../01-utils/' as *;
+
+// definitionList
+@use '../../../20-components/definitionList/definitionList';
+
+.c-top-link-list {
+    padding-top: 20px;
+
+    .c-definition-list {
+        & + .c-definition-list {
+            margin-top: 15px;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+/*
+    topProfile
+*/
+@use '../../../01-utils' as *;
+
+// title
+@use '../../../10-objects/title/title';
+
+.c-top-profile {
+    border-bottom: 1px solid $border-color;
+    padding-bottom: 30px;
+
+    .c-top-profile__icon {
+        img {
+            border: 2px solid $border-color;
+            border-radius: 50%;
+            color-scheme: only light;
+        }
+    }
+
+    .o-title {
+        margin-top: 20px;
+    }
+
+    .c-top-profile__job {
+        margin-top: 10px;
+        color: $text-color-gray;
+    }
+}

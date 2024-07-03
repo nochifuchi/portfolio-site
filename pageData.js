@@ -4,7 +4,8 @@ export const pageData = {
     title: 'FUMITAKA NOZAWA portfolio | ノザワフミタカのポートフォリオサイト',
     isTop: true,
   },
-  // '/about.html': {
-  //   title: '',
-  // }
+  '/about.html': {
+    title: 'FUMITAKA NOZAWA portfolio | About',
+    isTop: false,
+  },
 };

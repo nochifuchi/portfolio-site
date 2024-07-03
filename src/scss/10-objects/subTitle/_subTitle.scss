@@ -1,0 +1,10 @@
+/*
+    subTitle
+*/
+@use '../../01-utils' as *;
+
+.o-sub-title {
+    font-size: font-size(24);
+    font-weight: $font-bold;
+    letter-spacing: -0.4px;
+}

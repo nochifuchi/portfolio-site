@@ -1,0 +1,95 @@
+/*
+    ダークモード判定
+*/
+@mixin dark-mode {
+    @media (prefers-color-scheme: dark) {
+        body:not(.light) & {
+            @content;
+        }
+    }
+
+    @at-root {
+        body.dark & {
+            @content;
+        }
+    }
+}
+
+/*
+    ライトモード判定
+*/
+@mixin light-mode {
+    @media (prefers-color-scheme: light) {
+        body:not(.dark) & {
+            @content;
+        }
+    }
+
+    body.light & {
+        @content;
+    }
+}
+
+/*
+    ダークモード対応用mixin
+*/
+@mixin set-color(
+    $variable-name,
+    $light,
+    $hover: none,
+    $dark: none,
+    $dark-hover: none,
+    $element: none
+) {
+    @if $element != none {
+        @at-root {
+            #{$element} {
+                #{$variable-name}: #{$light};
+
+                @if $hover != none {
+                    #{$variable-name}-hover: #{$hover};
+                }
+
+                @if $dark != none {
+                    @include dark-mode {
+                        #{$variable-name}: #{$dark};
+
+                        @if $dark-hover != none {
+                            #{$variable-name}-hover: #{$dark-hover};
+                        }
+                    }
+                }
+            }
+        }
+    } @else {
+        :root {
+            #{$variable-name}: #{$light};
+
+            @if $hover != none {
+                #{$variable-name}-hover: #{$hover};
+            }
+
+            @if $dark != none {
+                @media (prefers-color-scheme: dark) {
+                    body:not(.light) {
+                        #{$variable-name}: #{$dark};
+
+                        @if $dark-hover != none {
+                            #{$variable-name}-hover: #{$dark-hover};
+                        }
+                    }
+                }
+
+                @at-root {
+                    body.dark {
+                        #{$variable-name}: #{$dark};
+
+                        @if $dark-hover != none {
+                            #{$variable-name}-hover: #{$dark-hover};
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

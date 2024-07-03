@@ -1,0 +1,71 @@
+/* ==========================================================================
+  breakpointのmixin
+  ========================================================================== */
+@use 'sass:math';
+@use 'sass:map';
+
+/*
+    使い方：例
+
+  //基本的に下記を用いる
+    @include break-points(max, md) { md:767.98px以下にスタイル付与　}
+    @include break-points(min, sm) { sm:376px以上にスタイル付与　　}
+    @include break-points(sm, md) { sm:376px ~ md:767.98pxにスタイル付与　}
+
+  //例外的に使う場合は下記を用いる
+    @include break-points(max, 360) { 360px以下にスタイル付与 }
+    @include break-points(400, 900) { 400px ~ 900pxにスタイル付与 }
+*/
+
+// 標準のレスポンシブ境界値
+$breakpoints: (
+    xs: 321,
+    sm: 376,
+    md: 768,
+    lg: 1111,
+);
+
+// 境界値の設定
+$option: max; // max,minどちらかに設定
+$option-floor: 0.02; // 境界の差を設定
+
+// 境界値のmediaクエリを自動で返すfunction
+@function res-mq($key, $value, $option: $option) {
+    @if $key == min and $option == min {
+        $value: $value + $option-floor;
+    } @else if $key == max and $option == max {
+        $value: $value - $option-floor;
+    }
+
+    @return '(#{$key}-width: #{$value}px)';
+}
+
+// レスポンシブ設定のmixin
+@mixin break-points($value1, $value2, $option: $option) {
+    @if $value1 == min or $value1 == max {
+        @if map-has-key($breakpoints, $value2) {
+            $value2: map.get($breakpoints, $value2);
+        }
+
+        @media screen and #{res-mq($value1, $value2, $option)} {
+            @content;
+        }
+    } @else {
+        @if map-has-key($breakpoints, $value1) {
+            $value1: map.get($breakpoints, $value1);
+        }
+
+        @if map-has-key($breakpoints, $value2) {
+            $value2: map.get($breakpoints, $value2);
+        }
+
+        $few: math.min($value1, $value2);
+        $many: math.max($value1, $value2);
+
+        @media screen and #{res-mq(max, $many, $option)} {
+            @media screen and #{res-mq(min, $few, $option)} {
+                @content;
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+@use '../01-utils' as *;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    text-size-adjust: 100%;
+}
+
+body {
+    display: block;
+    min-height: 100vh;
+    color: $text-color;
+    font-family: $base-font-family;
+    line-height: 1.5;
+}
+
+a {
+    color: $text-color;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
