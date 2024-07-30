@@ -5,12 +5,12 @@
 */
 
 // テキスト
-@include set-color(--text-color, #000, $hover: #1e293b);
+@include set-color(--text-color, #000, $hover: #767676);
 
 $text-color: var(--text-color);
 $text-color-hover: var(--text-color-hover);
 
-@include set-color(--text-color-gray, #475569, $hover: #64748b);
+@include set-color(--text-color-gray, #475569, $hover: #7e7f81);
 
 $text-color-gray: var(--text-color-gray);
 $text-color-gray-hover: var(--text-color-gray-hover);
