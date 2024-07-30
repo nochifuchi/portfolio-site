@@ -8,7 +8,28 @@
     dt {
         > a {
             &:hover {
-                text-decoration: underline;
+                .o-sub-title {
+                    span {
+                        color: $text-color-gray;
+                    }
+                }
+            }
+
+            &._external-link {
+                .o-sub-title {
+                    span {
+                        display: inline-flex;
+                        align-items: center;
+
+                        &::after {
+                            content: '\e89e';
+                            display: inline-block;
+                            margin-left: 4px;
+                            font-family: 'Material Symbols Outlined';
+                            font-size: 20px;
+                        }
+                    }
+                }
             }
         }
     }
